@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoleDispatcher : MonoBehaviour
+public class MoleR : MonoBehaviour
 {
     [SerializeField] private float mMoleQPosY, mMoleQPosX,mMoleQPosZ;//ｑのキーのモグラの位置
     [SerializeField] private float mMoleBetweenX, mMoleBetweenY,mMoleBetweenZ;
@@ -10,41 +10,11 @@ public class MoleDispatcher : MonoBehaviour
     private const int mTopDivisionKeyNum = 10;//一番上の段のキーの個数
     private const int mMiddleDivisionKeyNum = 9;//中断のキーの個数
     private const int mBottomDivisionKeyNum = 7;//下の段のキーの個数
-    private List<char> mAlphabets = new List<char>();
-    private void SetAlphabet()
-    {
-        mAlphabets.Add('q');//一段目
-        mAlphabets.Add('w');
-        mAlphabets.Add('e');
-        mAlphabets.Add('r');
-        mAlphabets.Add('t');
-        mAlphabets.Add('y');
-        mAlphabets.Add('u');
-        mAlphabets.Add('i');
-        mAlphabets.Add('o');
-        mAlphabets.Add('p');
-        mAlphabets.Add('a');//二段目
-        mAlphabets.Add('s');
-        mAlphabets.Add('d');
-        mAlphabets.Add('f');
-        mAlphabets.Add('g');
-        mAlphabets.Add('h');
-        mAlphabets.Add('j');
-        mAlphabets.Add('k');
-        mAlphabets.Add('l');
-        mAlphabets.Add('z');//三段目
-        mAlphabets.Add('x');
-        mAlphabets.Add('c');
-        mAlphabets.Add('v');
-        mAlphabets.Add('b');
-        mAlphabets.Add('n');
-        mAlphabets.Add('m');
-    }
-    // Start is called before the first frame update
+    
     void Start()
     {
-        SetAlphabet();
-        mMolePool.CreatePool(mAlphabets.Count);
+        //キーボードの数だけ発注
+        mMolePool.CreatePool(mTopDivisionKeyNum + mMiddleDivisionKeyNum + mBottomDivisionKeyNum);
     }
     /// <summary>
     /// モグラを配置します
@@ -54,7 +24,7 @@ public class MoleDispatcher : MonoBehaviour
     public GameObject SetMole(int _alphabetPermutation,GameObject _mole)
     {
 
-        char moleCharID = mAlphabets[_alphabetPermutation];          //担当しているキー
+        //担当しているキー
         float x = mMoleQPosX, y = mMoleQPosY, z = mMoleQPosZ;//ｑのキーの位置から展開
 
         //モグラの位置決め
@@ -82,7 +52,7 @@ public class MoleDispatcher : MonoBehaviour
         _mole.AddComponent<Mole>();
         Mole moleClass = _mole.GetComponent<Mole>();
 
-        moleClass.InitMole(moleCharID.ToString(),x,y,z);
+        //moleClass.InitMole(,x,y,z);
         
         return _mole;
     }
