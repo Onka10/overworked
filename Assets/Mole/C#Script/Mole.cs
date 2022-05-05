@@ -1,25 +1,52 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Mole : MonoBehaviour
 {
-    private Animation mAnimation;         
-    private string mMoleCharID;           //ãƒ¢ã‚°ãƒ©ã®è­˜åˆ¥å
-
-    public void InitMole(string CharID,float posX,float posY,float posZ)
+    [SerializeField,Range(1.0f,100.0f)] private float mAppearanceTimeLimit;   //oŒ»ŠÔ
+    private string mDeadKey;                               //€ˆö‚ÌƒL[‚Æ‚È‚éƒL[
+    private MoleStateEnum.MoleState mState;                //ƒ‚ƒOƒ‰‚Ìó‘Ô
+    private float mAppearanceTime;
+    /// <summary>
+    /// ‚±‚Ìƒ‚ƒOƒ‰‚Ì€ˆö‚ÌƒL[‚Ìİ’è
+    /// </summary>
+    /// <param name="_InputKeyID">‚±‚ÌƒL[‚Å€‚É‚Ü‚·</param>
+    /// ƒQ[ƒ€‚ªn‚Ü‚é‚Æˆê“x‚¾‚¯ŒÄ‚Î‚ê‚é
+    public void InitMole(string _InputKeyID)
     {
-        mAnimation = GetComponent<Animation>();
-        Vector3 pos = new Vector3(posX, posY, posZ);
-        gameObject.transform.position = pos;
-        mMoleCharID = CharID;
+        mDeadKey = _InputKeyID;
     }
-
-    public void Attacked(string Alphabet)
+    /// <summary>
+    /// UŒ‚‚ª’¼Œ‚‚µ‚½‚È‚ç€‚Ê
+    /// </summary>
+    /// <param name="_InputKeyName"></param>
+    public void Attacked(string _InputKeyName)
     {
-        if (mMoleCharID == Alphabet)
+        if (mDeadKey == _InputKeyName) 
         {
-            Destroy(this);
+            
         }
+    }
+    private void Appearance()
+    {
+        mAppearanceTime += Time.deltaTime;
+        if (mAppearanceTime>mAppearanceTimeLimit)
+        {
+            
+        }
+    }
+    private void ChangeMoleState(MoleStateEnum.MoleState _changeState)
+    {
+
+    }
+    private void OnEnable()
+    {
+        mAppearanceTime = 0.0f;
+    }
+    private void Update()
+    {
+
+
     }
 }
