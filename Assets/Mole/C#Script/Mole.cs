@@ -7,27 +7,20 @@ public class Mole : MonoBehaviour
     [SerializeField,Range(1.0f,100.0f)] private float mAppearanceTimeLimit;   //出現時間
     private MoleStateEnum.MoleState mState;                //モグラの状態
     private float mAppearanceTime;                         //出現している時間
-    private string mDeadKey;                               //死因のキーとなるキー
     
-    /// <summary>
-    /// このモグラの死因のキーの設定
-    /// </summary>
-    /// <param name="_InputKeyID">このキーで死にます</param>
-    /// ゲームが始まると一度だけ呼ばれる
-    public void SetMoleDeadKey(string _InputKeyID)
-    {
-        mDeadKey = _InputKeyID;
-    }
+    //private Color mColor;
+    //public void GetColor()
+    //{
+        
+    //}
+
     /// <summary>
     /// 攻撃が直撃したなら死ぬ
     /// </summary>
     /// <param name="_InputKeyName"></param>
     public void Attacked(string _InputKeyName)
-    {
-        if (mDeadKey == _InputKeyName) 
-        {
-            ChangeMoleState(MoleStateEnum.MoleState.Dameged);
-        }
+    { 
+        //ChangeMoleState(MoleStateEnum.MoleState.Dameged);
     }
 
     /// <summary>
@@ -39,17 +32,18 @@ public class Mole : MonoBehaviour
         if (mAppearanceTime>mAppearanceTimeLimit)
         {
             //姿をくらました
-            ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
+            //ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
         }
     }
     /// <summary>
     /// 引数の状態に変更するよ
     /// </summary>
     /// <param name="_changeState"></param>
-    public void ChangeMoleState(MoleStateEnum.MoleState _changeState)
-    {
-        mState = _changeState;
-    }
+    //public void ChangeMoleState(MoleStateEnum.MoleState _changeState)
+    //{
+    //    mState = _changeState;
+    //}
+
     /// <summary>
     /// モグラの出現時間の初期化
     /// </summary>

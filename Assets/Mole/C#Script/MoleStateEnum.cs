@@ -11,5 +11,4 @@ public class MoleStateEnum : MonoBehaviour
         DisAppearance,     //キーボード下に逃げた
         Dameged　　        //攻撃を受けている
     };
-
 }
