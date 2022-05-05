@@ -65,10 +65,10 @@ public class DebugMole : MonoBehaviour
         if (mState == MoleStateEnum.MoleState.Appearance)       //出現中
         {
             Appearance();
-            if(Input.GetKeyDown(KeyCode.A))
-            {
-                Attacked("A");
-            }
+            //if(Input.GetKeyDown(KeyCode.A))
+            //{
+            //    Attacked("A");
+            //}
         }
         else if (mState == MoleStateEnum.MoleState.Incubation)   //潜伏中
         {
