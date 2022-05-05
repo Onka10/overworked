@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Naoki/GameManegerTest.unity
-    guid: 79b0f2fa937a6ca42909381f9a137584
-  - enabled: 1
-    path: Assets/Naoki/New Scene.unity
-    guid: bcac1af83a32f6e48943d897ec808886
+  m_Scenes: []
   m_configObjects: {}
