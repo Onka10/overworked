@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-04T14:47:32.780Z" agent="5.0 (Windows)" etag="NQJTnAa1SIxKra4Tl3-T" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-05T06:30:49.136Z" agent="5.0 (Windows)" etag="4vF__8w4g5YmIWnOXmeR" version="17.5.1" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="2062" dy="2212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="1619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-6" value="gameの初期化&#xa;時間を管理&#xa;スコアの次のシーンに受け渡し" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-4" vertex="1">
           <mxGeometry y="34" width="200" height="76" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vIHWWqByB2-bfzq80yYL-7" target="TaxMFq9b2UHxSqHYbKRy-56">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.417;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vIHWWqByB2-bfzq80yYL-7" target="TaxMFq9b2UHxSqHYbKRy-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="790" y="-80" />
@@ -35,10 +35,10 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-8" value="DeadKey//何のキーで死ぬか" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="26" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-7" value="MoleStateEnum//状態を表す" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-7">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-7" value="MoleStateEnum//状態を表す" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="52" width="300" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-17" value="UpperTime//出現時間" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-7">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-17" value="UpperTime//出現時間" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="78" width="300" height="26" as="geometry" />
         </mxCell>
         <mxCell id="vIHWWqByB2-bfzq80yYL-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
@@ -47,10 +47,10 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-10" value="public InitMole//初期化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="112" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-39" value="public ChangeMoleState//を変化させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-7">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-39" value="public ChangeMoleState//を変化させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="152" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-45" value="public ChangeMoleState//を変化させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-7">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-45" value="public ChangeMoleState//を変化させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="192" width="300" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vIHWWqByB2-bfzq80yYL-29" value="ScoreManeger" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" parent="1" vertex="1">
@@ -59,10 +59,10 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-30" value="AddSore//スコアを加算" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-29" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1.01;entryY=0.761;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vIHWWqByB2-bfzq80yYL-44" target="TaxMFq9b2UHxSqHYbKRy-40">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1.01;entryY=0.761;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vIHWWqByB2-bfzq80yYL-44" target="TaxMFq9b2UHxSqHYbKRy-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.661;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.008;entryY=0.31;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-14" target="vIHWWqByB2-bfzq80yYL-60">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.661;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.008;entryY=0.31;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-14" target="vIHWWqByB2-bfzq80yYL-60" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="970" y="-230" as="targetPoint" />
             <Array as="points">
@@ -77,16 +77,16 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-44" value="Imole" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="680" y="-190" width="240" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-44" value="SetDeadKey//死ぬキーをセット" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-44">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-44" value="SetDeadKey//死ぬキーをセット" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-44" vertex="1">
           <mxGeometry y="26" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-54" value="GetMoleState//Stateを入手" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-44">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-54" value="GetMoleState//Stateを入手" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-44" vertex="1">
           <mxGeometry y="52" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-56" value="AttackedMole//叩く" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-44">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-56" value="AttackedMole//叩く" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-44" vertex="1">
           <mxGeometry y="78" width="240" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="vIHWWqByB2-bfzq80yYL-57" value="KeyboardEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="vIHWWqByB2-bfzq80yYL-57" value="KeyBoardEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="980" y="-270" width="160" height="84" as="geometry" />
         </mxCell>
         <mxCell id="vIHWWqByB2-bfzq80yYL-59" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-57" vertex="1">
@@ -95,64 +95,64 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-60" value="Qが0でMが24の順番" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-57" vertex="1">
           <mxGeometry y="34" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-1" value="ScoreView" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-1" value="ScoreView" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="960" y="-432" width="140" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-2" value="スコアの表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-2" value="スコアの表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-1" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-3" value="TImeView" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-3" value="TImeView" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="420" y="-510" width="140" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-4" value="時間の表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-3">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-4" value="時間の表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-3" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-8" value="MoleStateEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-8" value="MoleStateEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1000" y="-15" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-8">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-8" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-10" value="・潜っている&#xa;・出ている&#xa;・帰っている&#xa;・叩かれている&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-8">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-10" value="・潜っている&#xa;・出ている&#xa;・帰っている&#xa;・叩かれている&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-8" vertex="1">
           <mxGeometry y="34" width="160" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.404;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-12" target="vIHWWqByB2-bfzq80yYL-6">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.404;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-12" target="vIHWWqByB2-bfzq80yYL-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-12" value="MoleManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-12" value="MoleManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="400" y="-287" width="230" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-14" value="List&lt;IMole&gt;//AからZまでのMoleを管理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-12">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-14" value="List&lt;IMole&gt;//AからZまでのMoleを管理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-12" vertex="1">
           <mxGeometry y="26" width="230" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-12">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-12" vertex="1">
           <mxGeometry y="52" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-40" value="public InitMole//MoleListの初期化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-12">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-40" value="public InitMole//MoleListの初期化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-12" vertex="1">
           <mxGeometry y="60" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-16" value="MoleAttck//Moleを叩く" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-12">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-16" value="MoleAttck//Moleを叩く" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-12" vertex="1">
           <mxGeometry y="100" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-41" value="ApperMole//Moleを出現させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-12">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-41" value="ApperMole//Moleを出現させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-12" vertex="1">
           <mxGeometry y="140" width="230" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-21" value="MoleView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-21" value="MoleView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1180" y="20" width="360" height="154" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-21">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-21" vertex="1">
           <mxGeometry y="26" width="360" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-26" value="private ApperAnimation//出現とアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-21">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-26" value="private ApperAnimation//出現とアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-21" vertex="1">
           <mxGeometry y="34" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-29" value="private DamagedAnimation//叩かれたアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-21">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-29" value="private DamagedAnimation//叩かれたアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-21" vertex="1">
           <mxGeometry y="74" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-30" value="private DisApperAnimation//帰るアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-21">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-30" value="private DisApperAnimation//帰るアニメーション再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-21" vertex="1">
           <mxGeometry y="114" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.36;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-32" target="TaxMFq9b2UHxSqHYbKRy-45">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.36;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-32" target="TaxMFq9b2UHxSqHYbKRy-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="740" y="230" as="targetPoint" />
             <Array as="points">
@@ -163,16 +163,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-32" value="MolePresenter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-32" value="MolePresenter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="760" y="310" width="360" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-32">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-32" vertex="1">
           <mxGeometry y="26" width="360" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-36" value="public InactiveCopmelte//アニメーションの終了を知らせる&#xa;//&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-32">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-36" value="public InactiveCopmelte//アニメーションの終了を知らせる&#xa;//&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-32" vertex="1">
           <mxGeometry y="34" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.429;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="TaxMFq9b2UHxSqHYbKRy-30">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.429;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="TaxMFq9b2UHxSqHYbKRy-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="940" y="310" as="sourcePoint" />
             <mxPoint x="856.2000000000003" y="82.44000000000005" as="targetPoint" />
@@ -182,22 +182,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.773;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vIHWWqByB2-bfzq80yYL-10" target="TaxMFq9b2UHxSqHYbKRy-10">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.773;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vIHWWqByB2-bfzq80yYL-10" target="TaxMFq9b2UHxSqHYbKRy-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.472;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.116;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-12" target="vIHWWqByB2-bfzq80yYL-30">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.472;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.008;exitY=0.116;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-12" target="vIHWWqByB2-bfzq80yYL-30" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="900" y="-280" as="sourcePoint" />
             <mxPoint x="950" y="-330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.711;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-2" target="vIHWWqByB2-bfzq80yYL-30">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.711;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-2" target="vIHWWqByB2-bfzq80yYL-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.852;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-4" target="vIHWWqByB2-bfzq80yYL-6">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.852;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-4" target="vIHWWqByB2-bfzq80yYL-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.563;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="TaxMFq9b2UHxSqHYbKRy-40" target="vIHWWqByB2-bfzq80yYL-3">
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.563;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-40" target="vIHWWqByB2-bfzq80yYL-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
