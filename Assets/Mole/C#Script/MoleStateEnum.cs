@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +6,10 @@ public class MoleStateEnum : MonoBehaviour
 {
     public enum MoleState
     {    
-        Incubation,        //ƒL[ƒ{[ƒh‰º‚Éö•š’†
-        Appearance,        //ƒL[ƒ{[ƒhã‚ÉoŒ»
-        DisAppearance,     //ƒL[ƒ{[ƒh‰º‚É“¦‚°‚½
-        Dameged@@        //UŒ‚‚ğó‚¯‚Ä‚¢‚é
+        Incubation,        //ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ä¸‹ã«æ½œä¼ä¸­
+        Appearance,        //ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ä¸Šã«å‡ºç¾
+        DisAppearance,     //ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ä¸‹ã«é€ƒã’ãŸ
+        Damegedã€€ã€€        //æ”»æ’ƒã‚’å—ã‘ã¦ã„ã‚‹
     };
 
 }
