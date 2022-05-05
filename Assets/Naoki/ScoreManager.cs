@@ -5,12 +5,12 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public int score;
-
+    public GameManeger gameManeger;
     // Start is called before the first frame update
     void Start()
     {
-
-        score = 0;//‰Šú‰»
+        gameManeger = FindObjectOfType<GameManeger>();
+        score = gameManeger.nextScore;//‰Šú‰»
     }
 
     // Update is called once per frame

@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 20563985}
   - component: {fileID: 20563984}
   m_Layer: 5
-  m_Name: Button
+  m_Name: GetScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,7 +260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -68, y: -22}
+  m_AnchoredPosition: {x: 9.299988, y: 53.799988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &20563984
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 166537514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4c51484ce5296478f7a7b1844dd720, type: 3}
+  m_Script: {fileID: 11500000, guid: 101b1e8b4eb05d64185ad0bd9d04b936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 774065947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7e99182552e6624b89234dbbfc9ed65, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ef88ecf6e5d363408814cf0863924d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1580970516}
@@ -664,7 +664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: GetScore
 --- !u!222 &1228983141
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -749,7 +749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 14}
+  m_AnchoredPosition: {x: 63.3, y: 89.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2137519952
