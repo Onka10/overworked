@@ -20,50 +20,54 @@ public class Mole : MonoBehaviour
     /// </summary>
     public void Attacked()
     { 
-        //ChangeMoleState(MoleStateEnum.MoleState.Dameged);
+        ChangeMoleState(MoleState.Dameged);
         Debug.Log("攻撃された");
+
+        //TO Doスコアマネージャを呼ぶ
     }
-    
 
     /// <summary>
-    /// モグラの出現時の挙動
-    /// </summary>
-    private void Appearance()
-    {
-        mAppearanceTime += Time.deltaTime;
-        if (mAppearanceTime>mAppearanceTimeLimit)
-        {
-            //姿をくらました
-            //ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
-        }
-    }
-    /// <summary>
-    /// 引数の状態に変更するよ
+    /// 引数の状態に変更
     /// </summary>
     /// <param name="_changeState"></param>
-    //public void ChangeMoleState(MoleStateEnum.MoleState _changeState)
-    //{
-    //    mState = _changeState;
-    //}
-
-    /// <summary>
-    /// モグラの出現時間の初期化
-    /// </summary>
-    private void OnEnable()
+    private void ChangeMoleState(MoleState _changeState)
     {
-        mAppearanceTime = 0.0f;
-        _moleState = MoleState.Appearance;
+       _moleState  = _changeState;
     }
 
-    private void Update()
-    {
-        if (_moleState == MoleState.Appearance)       //出現中
-        {
-            Appearance();
-        }
-        else if(_moleState == MoleState.Incubation)   //潜伏中
-        {
-            this.gameObject.SetActive(false);//潜伏状態になったら非アクティブ化する
-        }
-    }
+    
+
+    // /// <summary>
+    // /// モグラの出現時の挙動
+    // /// </summary>
+    // private void Appearance()
+    // {
+    //     mAppearanceTime += Time.deltaTime;
+    //     if (mAppearanceTime>mAppearanceTimeLimit)
+    //     {
+    //         //姿をくらました
+    //         //ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
+    //     }
+    // }
+
+    // /// <summary>
+    // /// モグラの出現時間の初期化
+    // /// </summary>
+    // private void OnEnable()
+    // {
+    //     mAppearanceTime = 0.0f;
+    //     _moleState = MoleState.Appearance;
+    // }
+
+    // private void Update()
+    // {
+    //     if (_moleState == MoleState.Appearance)       //出現中
+    //     {
+    //         Appearance();
+    //     }
+    //     else if(_moleState == MoleState.Incubation)   //潜伏中
+    //     {
+    //         this.gameObject.SetActive(false);//潜伏状態になったら非アクティブ化する
+    //     }
+    // }
 }

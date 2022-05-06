@@ -43,11 +43,13 @@ public class PlayerInput : MonoBehaviour
             {"Key:/Keyboard/x" , KeyBoardEnum.X},
             {"Key:/Keyboard/y" , KeyBoardEnum.Y},
             {"Key:/Keyboard/z" , KeyBoardEnum.Z}
-
         };
     }
 
     public void OnKey(InputAction.CallbackContext context){
+        //ゲーム中以外は実行しない
+        if(GameManager.I.State.Value != GameState.InGame)   return;
+
         if(context.phase == InputActionPhase.Started){
             string key = context.control.ToString();
             InputKeyCode = keyDictionary[key];
