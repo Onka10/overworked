@@ -5,20 +5,18 @@ using UnityEngine.UI;
 public class StartButton : MonoBehaviour
 {
     Button SButton;
+    public GameObject CountDown;
     private void Start()
     {
         SButton = gameObject.GetComponent<Button>();
     }
-    public void GameStart()
+    public void GameStartAnime()
     {
         Debug.Log("GameStart");
+        CountDown.SetActive(true);
     }
     private void Update()
     {
-        if (false)//スペースを押してスタート
-        {
-            GameStart();
-            //アニメーション演出があれば、Buttonは偽物でも構いません。
-        }
+
     }
 }
