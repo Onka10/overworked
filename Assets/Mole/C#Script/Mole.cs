@@ -5,23 +5,25 @@ using UnityEngine;
 public class Mole : MonoBehaviour
 {
     [SerializeField,Range(1.0f,100.0f)] private float mAppearanceTimeLimit;   //出現時間
-    private MoleStateEnum.MoleState mState;                //モグラの状態
-    private float mAppearanceTime;                         //出現している時間
-    
-    //private Color mColor;
-    //public void GetColor()
-    //{
-        
-    //}
+    private MoleState _moleState;                //モグラの状態
+    private float mAppearanceTime;               //出現している時間
 
     /// <summary>
-    /// 攻撃が直撃したなら死ぬ
+    /// モグラの 状態を返す
     /// </summary>
-    /// <param name="_InputKeyName"></param>
-    public void Attacked(string _InputKeyName)
+    public MoleState GetMoleState(){
+        return _moleState;
+    }
+
+    /// <summary>
+    /// 攻撃されたらなら死ぬ
+    /// </summary>
+    public void Attacked()
     { 
         //ChangeMoleState(MoleStateEnum.MoleState.Dameged);
+        Debug.Log("攻撃された");
     }
+    
 
     /// <summary>
     /// モグラの出現時の挙動
@@ -50,16 +52,16 @@ public class Mole : MonoBehaviour
     private void OnEnable()
     {
         mAppearanceTime = 0.0f;
-        mState = MoleStateEnum.MoleState.Appearance;
+        _moleState = MoleState.Appearance;
     }
 
     private void Update()
     {
-        if (mState == MoleStateEnum.MoleState.Appearance)       //出現中
+        if (_moleState == MoleState.Appearance)       //出現中
         {
             Appearance();
         }
-        else if(mState == MoleStateEnum.MoleState.Incubation)   //潜伏中
+        else if(_moleState == MoleState.Incubation)   //潜伏中
         {
             this.gameObject.SetActive(false);//潜伏状態になったら非アクティブ化する
         }

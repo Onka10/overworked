@@ -7,6 +7,6 @@ public class MolePresenter : MonoBehaviour
     [SerializeReference] private Mole mMole;
     private void InactiveCommplite()
     {
-        mMole.ChangeMoleState(MoleStateEnum.MoleState.Incubation);
+        // mMole.ChangeMoleState(MoleStateEnum.MoleState.Incubation);
     }
 }
