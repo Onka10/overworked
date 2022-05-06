@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-05T17:08:32.795Z" agent="5.0 (Windows)" etag="0HxKA3Ncfre5W3bJRaTn" version="18.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-06T15:20:26.975Z" agent="5.0 (Windows)" etag="hy1lL7hKug1kRxrsgijB" version="18.0.0" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="1178" dy="1735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="569" dy="1401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,7 +19,7 @@
         <mxCell id="vIHWWqByB2-bfzq80yYL-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-4" vertex="1">
           <mxGeometry y="26" width="200" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="vIHWWqByB2-bfzq80yYL-6" value="gameの初期化&#xa;時間を管理&#xa;スコアの次のシーンに受け渡し" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-4" vertex="1">
+        <mxCell id="vIHWWqByB2-bfzq80yYL-6" value="gameの初期化&#xa;時間を管理" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-4" vertex="1">
           <mxGeometry y="34" width="200" height="76" as="geometry" />
         </mxCell>
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.725;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vIHWWqByB2-bfzq80yYL-7" target="TaxMFq9b2UHxSqHYbKRy-16" edge="1">
@@ -46,7 +46,7 @@
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-39" value="//public ChangeMoleState(MoleStateEnum)//を変化させる" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="86" width="320" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="f23flJSOwGEbcurt8e6T-5" value="AttackedMole()//攻撃された処理を行う" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vIHWWqByB2-bfzq80yYL-7">
+        <mxCell id="f23flJSOwGEbcurt8e6T-5" value="AttackedMole()//攻撃された処理を行う" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vIHWWqByB2-bfzq80yYL-7" vertex="1">
           <mxGeometry y="126" width="320" height="40" as="geometry" />
         </mxCell>
         <mxCell id="vIHWWqByB2-bfzq80yYL-29" value="ScoreManeger" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" parent="1" vertex="1">
@@ -86,14 +86,23 @@
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-4" value="時間の表示" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-3" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-8" value="MoleStateEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="-15" width="160" height="100" as="geometry" />
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-8" value="MoleState" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="-42" width="250" height="144" as="geometry" />
         </mxCell>
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-8" vertex="1">
-          <mxGeometry y="26" width="160" height="8" as="geometry" />
+          <mxGeometry y="26" width="250" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TaxMFq9b2UHxSqHYbKRy-10" value="・潜っている&#xa;・出ている&#xa;・帰っている&#xa;・叩かれている&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-8" vertex="1">
-          <mxGeometry y="34" width="160" height="66" as="geometry" />
+        <mxCell id="TaxMFq9b2UHxSqHYbKRy-10" value="Incubation//キーボード下に潜伏中" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-8" vertex="1">
+          <mxGeometry y="34" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-1" value="Appearance,     //キーボード上に出現" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-8">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-2" value="DisAppearance,    //キーボード下に逃げた" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-8">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-3" value="Dameged        //攻撃を受けている" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TaxMFq9b2UHxSqHYbKRy-8">
+          <mxGeometry y="120" width="250" height="24" as="geometry" />
         </mxCell>
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.404;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TaxMFq9b2UHxSqHYbKRy-12" target="vIHWWqByB2-bfzq80yYL-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -114,7 +123,7 @@
           <mxGeometry y="100" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-21" value="MoleView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="-42" width="360" height="154" as="geometry" />
+          <mxGeometry x="1340" y="-10" width="360" height="154" as="geometry" />
         </mxCell>
         <mxCell id="TaxMFq9b2UHxSqHYbKRy-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="TaxMFq9b2UHxSqHYbKRy-21" vertex="1">
           <mxGeometry y="26" width="360" height="8" as="geometry" />
@@ -156,7 +165,8 @@
             <mxPoint x="856.2000000000003" y="82.44000000000005" as="targetPoint" />
             <Array as="points">
               <mxPoint x="940" y="260" />
-              <mxPoint x="1334" y="260" />
+              <mxPoint x="1500" y="260" />
+              <mxPoint x="1500" y="144" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -182,11 +192,53 @@
             <mxPoint x="400" y="-207" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f23flJSOwGEbcurt8e6T-1" value="&lt;div&gt;Viewが出来ていない&lt;/div&gt;&lt;div&gt;SetActiveのメソッド&lt;/div&gt;&lt;div&gt;色はMoleが持つ&lt;br&gt;&lt;/div&gt;&lt;div&gt;AttackedMoleを編集&lt;br&gt;&lt;/div&gt;&lt;div&gt;IMole消す&lt;/div&gt;&lt;div&gt;Animation を購読する&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="f23flJSOwGEbcurt8e6T-1" value="&lt;div&gt;Viewが出来ていない&lt;/div&gt;&lt;div&gt;SetActiveのメソッド&lt;/div&gt;&lt;div&gt;色はMoleが持つ&lt;br&gt;&lt;/div&gt;&lt;div&gt;AttackedMoleを編集&lt;br&gt;&lt;/div&gt;&lt;div&gt;IMole消す&lt;/div&gt;&lt;div&gt;Animation を購読する&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="-78" width="200" height="118" as="geometry" />
         </mxCell>
-        <mxCell id="f23flJSOwGEbcurt8e6T-3" value="MoleManagerがDeadKey数字で管理する" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="f23flJSOwGEbcurt8e6T-3" value="MoleManagerがDeadKey数字で管理する" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="-78" width="240" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Incubation&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="425" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Apperarance&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="485" y="127" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;DisApperarance&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="545" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;" edge="1" parent="1" source="5sp8zgHh887uxsbAq0hh-4" target="5sp8zgHh887uxsbAq0hh-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="475" y="387" as="sourcePoint" />
+            <mxPoint x="525" y="337" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-9" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;entryX=0.243;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.868;exitY=0.893;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5sp8zgHh887uxsbAq0hh-6" target="5sp8zgHh887uxsbAq0hh-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="475" y="387" as="sourcePoint" />
+            <mxPoint x="525" y="337" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-10" value="Molemanagerからの指示" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="425" y="187" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-11" value="自動" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="545" y="197" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-12" value="Damaged" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="615" y="137" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-13" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.995;exitY=0.598;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.015;entryY=0.398;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5sp8zgHh887uxsbAq0hh-6" target="5sp8zgHh887uxsbAq0hh-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="755" y="287" as="sourcePoint" />
+            <mxPoint x="805" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5sp8zgHh887uxsbAq0hh-14" value="" style="endArrow=classic;html=1;rounded=0;fontSize=10;exitX=0.55;exitY=0.983;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.995;entryY=0.435;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5sp8zgHh887uxsbAq0hh-12" target="5sp8zgHh887uxsbAq0hh-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="755" y="287" as="sourcePoint" />
+            <mxPoint x="805" y="237" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
