@@ -50,9 +50,9 @@ public class PlayerInput : MonoBehaviour
     public void OnKey(InputAction.CallbackContext context){
         if(context.phase == InputActionPhase.Started){
             string key = context.control.ToString();
-            if(keyDictionary[key] == null)    throw new System.Exception("Keyがnullです");
-
             InputKeyCode = keyDictionary[key];
+            Debug.Log(key);
+
             _inputSubject.OnNext(Unit.Default);
         }
     }

@@ -6,28 +6,35 @@ using UniRx;
 public class MoleManagerKari : MonoBehaviour
 {
     public PlayerInput _playerInput;
-    // List<IMole> MoleList = new List<IMole>(25);
-    IMole[] MoleList = new IMole[25];
+
+    public GameObject ParentMoleKeyObject;
+
+    //キーボード順に代入すること
+    private GameObject[] MoleList = new GameObject[25];
 
     void Start(){
+        for(int i=0 ;i<MoleList.Length;i++){
+            MoleList[i] = ParentMoleKeyObject.transform.GetChild(i).gameObject;
+        }
+
         _playerInput.InputKey
         .Subscribe(_ => MoleAttack())
         .AddTo(this);
     }
 
-    private void InitMole(){
-        for(int i=0;i<MoleList.Length;i++){
-            // MoleList[i].SetDeadKey(key);
-        }
-    }
-
     private void MoleAttack(){
-        //判定
-        var Key = _playerInput.GetInputkey();
-        // MoleList[].AttackedMole();
+        Debug.Log("攻撃開始");
+        //押されたキーとMoleを紐づける
+        var InputKey = _playerInput.GetInputkey();
+        var MoleObject = MoleList[(int)InputKey];
+        var mole = MoleObject.GetComponent<Mole>();
+
+        //攻撃出来るか判定して攻撃
+        if(mole.GetMoleState() != MoleState.Appearance) return;
+        mole.Attacked();
     }
 
-    private void ApperMole(){
+    // private void ApperMole(){
 
-    }
+    // }
 }
