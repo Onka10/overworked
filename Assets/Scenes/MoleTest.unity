@@ -1695,12 +1695,8 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6154bf33-fe8a-4f46-942d-8139ab0a45ea
     m_ActionName: KeyBoard/Z[/Keyboard/anyKey]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 862bfdb0-dacc-44f1-b3ca-2549c7ec96ff
-    m_ActionName: New action map/New action
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: key
   m_DefaultActionMap: KeyBoard
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
