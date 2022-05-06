@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 3018632207175636529}
   - component: {fileID: 2182995032562129300}
   - component: {fileID: 4156674174135184734}
+  - component: {fileID: -1956030776498384211}
   m_Layer: 0
   m_Name: GreenDigda (1)
   m_TagString: Untagged
@@ -632,6 +633,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &-1956030776498384211
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499362911268473995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: daaa32f8762714cabb90a97a8a145dea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4081894641740122413
 GameObject:
   m_ObjectHideFlags: 0
