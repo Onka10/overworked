@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public class Mole : MonoBehaviour
 {
+    [SerializeField] MoleView _moleview;
+    [SerializeField] ScoreManager _scoreManager;
     private MoleState _moleState;                //モグラの状態
     private float mAppearanceTime;               //出現している時間
+
+    private CancellationTokenSource cts = new CancellationTokenSource();
 
     void Start(){
         _moleState = MoleState.Incubation;
@@ -30,18 +35,19 @@ public class Mole : MonoBehaviour
         Debug.Log("攻撃された");
 
         //TODO スコアマネージャを呼ぶ
+        _scoreManager.ScoreAdd(1);
     }
 
     /// <summary>
     /// モグラの出現
     /// </summary>
-    public async void Apper()
+    public async void Apper(CancellationToken ct = default)
     {
         //姿を出現
         _moleState = MoleState.Appearance;
         //移動中
         //FIXME MOveと連携が取れてない
-        await UniTask.Delay(3000);
+        await UniTask.Delay(1000,cancellationToken: ct);
         //潜る
         _moleState = MoleState.DisAppearance;
         
@@ -52,7 +58,13 @@ public class Mole : MonoBehaviour
     /// </summary>
     private void Init()
     {
+        //ステータスの初期化
         _moleState = MoleState.Incubation;
-        //TODO 色の変更・目の初期化
+
+        //TODO 色の初期化
+
+        //見た目の初期化
+        _moleview.InitLooks();
+
     }
 }

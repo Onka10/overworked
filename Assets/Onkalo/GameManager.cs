@@ -6,6 +6,7 @@ using UniRx;
 
 public class GameManager : Singleton<GameManager>
 {
+    [SerializeField] StartButton _startbutton;
 
     public IReadOnlyReactiveProperty<GameState> State => _state;
 
@@ -17,10 +18,12 @@ public class GameManager : Singleton<GameManager>
 
 
         _state.AddTo(this);
+
         //ゲームシーンのみ考える
         //初期化
         //カウントダウン
-        await UniTask.Delay (3000);
+        // _startbutton.GameStartAnime();
+        await UniTask.Delay (4000);
 
         //ゲームシーン開始
         _state.Value = GameState.InGame;

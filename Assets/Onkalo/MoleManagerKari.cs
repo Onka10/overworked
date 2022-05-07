@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
-using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public class MoleManagerKari : MonoBehaviour
 {
@@ -14,13 +14,20 @@ public class MoleManagerKari : MonoBehaviour
 
     //キーボード順に代入すること
     private GameObject[] MoleList = new GameObject[25];
+    private Mole[] MoleLists = new Mole[25];
 
     private bool _inGame;
+
+    private CancellationTokenSource cts = new CancellationTokenSource();
+
+    private int _upkey1;
+    private int _upkey2;
 
 
     void Start(){
         for(int i=0 ;i<MoleList.Length;i++){
-            MoleList[i] = ParentMoleKeyObject.transform.GetChild(i).gameObject;
+            // MoleList[i] = ParentMoleKeyObject.transform.GetChild(i).gameObject;
+            MoleLists[i] = ParentMoleKeyObject.transform.GetChild(i).gameObject.GetComponent<Mole>();
         }
 
         _playerInput.InputKey
@@ -49,16 +56,30 @@ public class MoleManagerKari : MonoBehaviour
     void Update(){
         if(_inGame){
             if(Music.IsNearChangedBeat()){
-                int up = (int)Random.Range (1.0f, 25.0f);
-                Debug.Log(up);
-                MoleList[up].SetActive(true);
-                False(up).Forget();
+                DecideUpMole();
+            }
+            if(Music.IsJustChangedBeat()){
+                UpMole();
             }
         }
     }
 
-    async UniTask False(int i){
-        await UniTask.Delay(1000);
-        MoleList[i].SetActive(false);
+    private void DecideUpMole(){
+        int up = (int)Random.Range (0f, 12.0f);
+        _upkey1 = up;
+        //TODO キーボード点滅
+
+        up = (int)Random.Range (12.0f, 24.0f);
+        _upkey2 = up;
+        //TODO キーボード点滅
+    }
+
+    private void UpMole(){
+        MoleLists[_upkey1].Apper(cts.Token);
+        MoleLists[_upkey2].Apper(cts.Token);
+    }
+
+    private void OnDestroy(){
+        cts.Cancel();
     }
 }
