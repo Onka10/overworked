@@ -13,6 +13,9 @@ public class GameManager : Singleton<GameManager>
 
     async void Start()
     {
+        //TODOタイトルシールを受け取る
+
+
         _state.AddTo(this);
         //ゲームシーンのみ考える
         //初期化
