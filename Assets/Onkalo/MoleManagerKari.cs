@@ -6,6 +6,8 @@ using Cysharp.Threading.Tasks;
 
 public class MoleManagerKari : MonoBehaviour
 {
+    //FIXME現状責任が重い
+    
     public PlayerInput _playerInput;
 
     public GameObject ParentMoleKeyObject;

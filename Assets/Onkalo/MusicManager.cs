@@ -6,7 +6,6 @@ using UniRx;
 public class MusicManager : MonoBehaviour
 {
     private AudioSource _audioSource;
-    public AudioClip[] BGM = new AudioClip[3];
 
     void Start(){
         _audioSource = GetComponent<AudioSource>();
@@ -24,8 +23,5 @@ public class MusicManager : MonoBehaviour
     private void MusicStart(GameState gamestate){
         //音源変更
         Music.Play("Music","");
-        // _audioSource.clip = BGM[(int)gamestate];
-
-        // _audioSource.Play();
     }
 }
