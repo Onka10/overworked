@@ -8,17 +8,23 @@ public class MoleUpDown : MonoBehaviour
     private float mFirstPositionY;                     //最初のポジション
     [SerializeField] private float mUpSpeed;           //上下運動速度
     private bool mDownward;                            //下降中かどうか
+    public bool mUpDownComplited;                      //上下運動を終えたかどうか
     //速度をスクリプトで変更したい用
     public void SetUpDownParameter(float _maxUpPositionY,float _upSpeed)
     {
         mMaxUpPositionY = _maxUpPositionY;
         mUpSpeed = _upSpeed;
     }
+    //アップダウンが始まるよ
+    public void StartUpDown()
+    {
+        mUpDownComplited = false;
+    }
     /// <summary>
     /// 一定高度まで行ったらそのあと下がるよ
     /// </summary>
     /// <returns>上下運動を完了したかどうか</returns>
-    public bool UpDown()
+    private void UpDown()
     {
         Vector3 UpDownSpeed = new Vector3(0, mUpSpeed, 0);
         //上昇
@@ -38,15 +44,23 @@ public class MoleUpDown : MonoBehaviour
         {
             this.gameObject.transform.position = new Vector3(0, mFirstPositionY, 0);
             mDownward = false;
-            return true;
+            mUpDownComplited= true;
         }
-        return false;
+        
     }
 
     private void Start()
     {
+        mUpDownComplited = true;
         mDownward = false;
         mFirstPositionY = this.transform.position.y;
         
+    }
+    private void Update()
+    {
+        if(!mUpDownComplited)
+        {
+            UpDown();
+        }
     }
 }
