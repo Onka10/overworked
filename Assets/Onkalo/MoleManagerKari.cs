@@ -14,8 +14,8 @@ public class MoleManagerKari : MonoBehaviour
     public GameObject ParentMoleKeyObject;
 
     //キーボード順に代入すること
-    private GameObject[] MoleList = new GameObject[25];
-    private Mole[] MoleLists = new Mole[25];
+    private GameObject[] MoleList = new GameObject[26];
+    private Mole[] MoleLists = new Mole[26];
 
     private bool _inGame;
 

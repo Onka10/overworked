@@ -47,7 +47,6 @@ MonoBehaviour:
   _musicManager: {fileID: 9149776470777237962}
   _gameover: {fileID: 0}
   _playerInput: {fileID: 4123350464631890451}
-  GameSet: 0
 --- !u!1 &4123350464585992538
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +204,7 @@ MonoBehaviour:
   - Name: 
     UnitPerBeat: 4
     UnitPerBar: 16
-    Tempo: 136
+    Tempo: 140
     StartBar: 0
     StartTimeSamples: 0
     LoopType: 0
@@ -804,6 +803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7584742996415729321}
   - component: {fileID: 179619375920538819}
+  - component: {fileID: 29486846158867368}
   m_Layer: 0
   m_Name: ScoreManger
   m_TagString: Untagged
@@ -837,6 +837,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101b1e8b4eb05d64185ad0bd9d04b936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &29486846158867368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927777183227277205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef88ecf6e5d363408814cf0863924d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreManager: {fileID: 179619375920538819}
 --- !u!1 &7843718801551849764
 GameObject:
   m_ObjectHideFlags: 0

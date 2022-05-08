@@ -19,12 +19,13 @@ public class PlayerEffectManager : MonoBehaviour
     public void Play(KeyBoardEnum _key)
     {
         GameObject PlayEffect = mPlayEffectList[(int)_key];
+        PlayEffect.SetActive(true);
         ParticleSystem particleSystem;
         //エフェクトを拾って動かすよ
         particleSystem = PlayEffect.GetComponentInChildren<ParticleSystem>();
 
 
-        particleSystem.Play();
+        particleSystem.Play(true);
     }
 
     /// <summary>
@@ -35,8 +36,10 @@ public class PlayerEffectManager : MonoBehaviour
         for (int i = 0; i <= (int)KeyBoardEnum.M; i++)
         {
             GameObject effect = mPlayerEffects.transform.GetChild(i).gameObject;
+
             effect.SetActive(false);
-            mPlayEffectList.Add(effect);
+            mPlayEffectList.Add(effect);  
+            Debug.Log(mPlayEffectList[i]);
         }
     }
 
