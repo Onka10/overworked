@@ -212,6 +212,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "GameStart",
+                    "type": "Button",
+                    "id": "3a65175e-d12f-44f9-b388-38e8a49fbd2d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -498,6 +506,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Z",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b97d969f-2af5-4f2e-95b8-c7c8c74a3b0c",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GameStart",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
