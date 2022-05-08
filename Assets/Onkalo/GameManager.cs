@@ -17,7 +17,6 @@ public class GameManager : Singleton<GameManager>
 
     async void Start()
     {
-        //TODOタイトルシールを受け取る
 
         _musicManager.LastGameTime
         .Subscribe(t =>{
@@ -26,11 +25,11 @@ public class GameManager : Singleton<GameManager>
         })
         .AddTo(this);
 
-        //ゲームシーンのみ考える
-        //初期化
-        //カウントダウン
-        // _startbutton.GameStartAnime();
-        await UniTask.Delay (4000);
+        //流れ
+        
+        //タイトル画面
+        //TODO初期化
+        await UniTask.WaitUntil(() => _startbutton.TitleEnd);
 
         //ゲームシーン開始
         _state.Value = GameState.InGame;

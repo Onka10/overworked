@@ -58,7 +58,7 @@ public class MoleManagerKari : MonoBehaviour
         // _playerEffectManager.Play(InputKey);
 
         //se再生
-        // SEManager
+        SEManager.I.StartClickSE();
 
         //攻撃出来るか判定して攻撃
         if(mole.GetMoleState() != MoleState.Appearance) return;

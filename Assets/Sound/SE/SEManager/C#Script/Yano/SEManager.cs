@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SEManager : MonoBehaviour
+public class SEManager : Singleton<SEManager>
 {
     [SerializeField] private AudioSource mPlayerAttackAudioSource;
     [SerializeField] private AudioSource mClickAudioSource;

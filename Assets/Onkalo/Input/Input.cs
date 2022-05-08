@@ -225,6 +225,14 @@ public class @Input : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""GameStart"",
+                    ""type"": ""Button"",
+                    ""id"": ""3a65175e-d12f-44f9-b388-38e8a49fbd2d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -513,6 +521,17 @@ public class @Input : IInputActionCollection, IDisposable
                     ""action"": ""Z"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b97d969f-2af5-4f2e-95b8-c7c8c74a3b0c"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GameStart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -559,6 +578,7 @@ public class @Input : IInputActionCollection, IDisposable
         m_KeyBoard_X = m_KeyBoard.FindAction("X", throwIfNotFound: true);
         m_KeyBoard_Y = m_KeyBoard.FindAction("Y", throwIfNotFound: true);
         m_KeyBoard_Z = m_KeyBoard.FindAction("Z", throwIfNotFound: true);
+        m_KeyBoard_GameStart = m_KeyBoard.FindAction("GameStart", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -634,6 +654,7 @@ public class @Input : IInputActionCollection, IDisposable
     private readonly InputAction m_KeyBoard_X;
     private readonly InputAction m_KeyBoard_Y;
     private readonly InputAction m_KeyBoard_Z;
+    private readonly InputAction m_KeyBoard_GameStart;
     public struct KeyBoardActions
     {
         private @Input m_Wrapper;
@@ -664,6 +685,7 @@ public class @Input : IInputActionCollection, IDisposable
         public InputAction @X => m_Wrapper.m_KeyBoard_X;
         public InputAction @Y => m_Wrapper.m_KeyBoard_Y;
         public InputAction @Z => m_Wrapper.m_KeyBoard_Z;
+        public InputAction @GameStart => m_Wrapper.m_KeyBoard_GameStart;
         public InputActionMap Get() { return m_Wrapper.m_KeyBoard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -751,6 +773,9 @@ public class @Input : IInputActionCollection, IDisposable
                 @Z.started -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnZ;
                 @Z.performed -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnZ;
                 @Z.canceled -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnZ;
+                @GameStart.started -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnGameStart;
+                @GameStart.performed -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnGameStart;
+                @GameStart.canceled -= m_Wrapper.m_KeyBoardActionsCallbackInterface.OnGameStart;
             }
             m_Wrapper.m_KeyBoardActionsCallbackInterface = instance;
             if (instance != null)
@@ -833,6 +858,9 @@ public class @Input : IInputActionCollection, IDisposable
                 @Z.started += instance.OnZ;
                 @Z.performed += instance.OnZ;
                 @Z.canceled += instance.OnZ;
+                @GameStart.started += instance.OnGameStart;
+                @GameStart.performed += instance.OnGameStart;
+                @GameStart.canceled += instance.OnGameStart;
             }
         }
     }
@@ -874,5 +902,6 @@ public class @Input : IInputActionCollection, IDisposable
         void OnX(InputAction.CallbackContext context);
         void OnY(InputAction.CallbackContext context);
         void OnZ(InputAction.CallbackContext context);
+        void OnGameStart(InputAction.CallbackContext context);
     }
 }
