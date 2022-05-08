@@ -6,7 +6,7 @@ using UniRx;
 public class MoleView : MonoBehaviour
 {
     [SerializeField] private GameObject mLeftEye, mRightEye;     //モグラの目
-    [SerializeField] private GameObject mAttackedEye;            //攻撃を受けた状態の目
+    [SerializeField] private GameObject mLeftAttackedEyePrefab,mRightAttackedEyePrefab;//大元のダメージを受けた目            //攻撃を受けた状態の目
     private GameObject mAttackedLeftEye, mAttackedRightEye;      //攻撃を受けた状態の両目
 
     /// <summary>
@@ -30,6 +30,7 @@ public class MoleView : MonoBehaviour
         //位置調整
         _leftEyeObject.transform.position = mLeftEye.transform.position;
         _rightEyeObject.transform.position = mRightEye.transform.position;
+
         //親子付け
         _leftEyeObject.transform.SetParent(this.transform);
         _rightEyeObject.transform.SetParent(this.transform);
@@ -38,16 +39,13 @@ public class MoleView : MonoBehaviour
     private void Start()
     {
         //ダメージを受けた目を複製
-        mAttackedLeftEye = Instantiate(mAttackedEye);
-        mAttackedRightEye = Instantiate(mAttackedEye);
+        mAttackedLeftEye = Instantiate(mLeftAttackedEyePrefab);
+        mAttackedRightEye = Instantiate(mRightAttackedEyePrefab);
 
         //目のパーツを初期化
         InitEyesObject(mAttackedLeftEye,mAttackedRightEye);
         //ダメージを受けた目を非表示
         SetActiveEyes(mAttackedLeftEye, mAttackedRightEye, false);
-        mAttackedEye.SetActive(false);
-
-
     }
     /// <summary>
     /// 見た目の初期化
@@ -65,5 +63,9 @@ public class MoleView : MonoBehaviour
         SetActiveEyes(mLeftEye,mRightEye, false);
         // 攻撃を受けた状態の目に変更
         SetActiveEyes(mAttackedLeftEye, mAttackedRightEye, true);
+    }
+    private void Update()
+    {
+        ChangeAttackedLooks();
     }
 }
