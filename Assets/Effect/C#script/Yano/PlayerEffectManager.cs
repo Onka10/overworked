@@ -31,12 +31,11 @@ public class PlayerEffectManager : MonoBehaviour
     /// </summary>
     private void CreateEffectPool()
     {
-        for (int i = 0; i < (int)KeyBoardEnum.M; i++)
+        for (int i = 0; i <= (int)KeyBoardEnum.M; i++)
         {
             GameObject effect = mPlayerEffects.transform.GetChild(i).gameObject;
             effect.SetActive(false);
             mPlayEffectList.Add(effect);
-
         }
     }
 

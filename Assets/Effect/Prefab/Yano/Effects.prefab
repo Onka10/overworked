@@ -111,6 +111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402913677209073 stripped
@@ -172,6 +176,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -235,6 +243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402913433163173 stripped
@@ -296,6 +308,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -359,6 +375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402913857215518 stripped
@@ -420,6 +440,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -483,6 +507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912978236626 stripped
@@ -544,6 +572,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -607,6 +639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402913391636991 stripped
@@ -668,6 +704,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -731,6 +771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402913274574091 stripped
@@ -792,6 +836,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -855,6 +903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912353158644 stripped
@@ -916,6 +968,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -979,6 +1035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912807256622 stripped
@@ -1040,6 +1100,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -1103,6 +1167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912732130612 stripped
@@ -1164,6 +1232,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -1227,6 +1299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912714080137 stripped
@@ -1288,6 +1364,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -1351,6 +1431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912004045748 stripped
@@ -1412,6 +1496,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -1475,6 +1563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402911904418145 stripped
@@ -1536,6 +1628,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
@@ -1599,6 +1695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shock_Effect (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
 --- !u!4 &4210402912301042051 stripped
@@ -1660,6 +1760,10 @@ PrefabInstance:
     - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
       propertyPath: m_Name
       value: Shock_Effect (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 216662929944328643, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3deb3df14cfc5244abb98dac6947be1, type: 3}
