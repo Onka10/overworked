@@ -4,22 +4,66 @@ using UnityEngine;
 
 public class Mole : MonoBehaviour
 {
-    private Animation mAnimation;         
-    private string mMoleCharID;           //モグラの識別名
+    [SerializeField,Range(1.0f,100.0f)] private float mAppearanceTimeLimit;   //出現時間
+    private MoleState _moleState;                //モグラの状態
+    private float mAppearanceTime;               //出現している時間
 
-    public void InitMole(string CharID,float posX,float posY,float posZ)
-    {
-        mAnimation = GetComponent<Animation>();
-        Vector3 pos = new Vector3(posX, posY, posZ);
-        gameObject.transform.position = pos;
-        mMoleCharID = CharID;
+    /// <summary>
+    /// モグラの 状態を返す
+    /// </summary>
+    public MoleState GetMoleState(){
+        return _moleState;
     }
 
-    public void Attacked(string Alphabet)
+    /// <summary>
+    /// 攻撃されたらなら死ぬ
+    /// </summary>
+    public void Attacked()
+    { 
+        //ChangeMoleState(MoleStateEnum.MoleState.Dameged);
+        Debug.Log("攻撃された");
+    }
+    
+
+    /// <summary>
+    /// モグラの出現時の挙動
+    /// </summary>
+    private void Appearance()
     {
-        if (mMoleCharID == Alphabet)
+        mAppearanceTime += Time.deltaTime;
+        if (mAppearanceTime>mAppearanceTimeLimit)
         {
-            Destroy(this);
+            //姿をくらました
+            //ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
+        }
+    }
+    /// <summary>
+    /// 引数の状態に変更するよ
+    /// </summary>
+    /// <param name="_changeState"></param>
+    //public void ChangeMoleState(MoleStateEnum.MoleState _changeState)
+    //{
+    //    mState = _changeState;
+    //}
+
+    /// <summary>
+    /// モグラの出現時間の初期化
+    /// </summary>
+    private void OnEnable()
+    {
+        mAppearanceTime = 0.0f;
+        _moleState = MoleState.Appearance;
+    }
+
+    private void Update()
+    {
+        if (_moleState == MoleState.Appearance)       //出現中
+        {
+            Appearance();
+        }
+        else if(_moleState == MoleState.Incubation)   //潜伏中
+        {
+            this.gameObject.SetActive(false);//潜伏状態になったら非アクティブ化する
         }
     }
 }
