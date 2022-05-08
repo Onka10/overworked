@@ -6,6 +6,13 @@ public class PlayerEffectManager : MonoBehaviour
 {
     [SerializeField] private GameObject mPlayerEffects;
     private List<GameObject> mPlayEffectList = new List<GameObject>();
+
+    // public void Active(){
+    //     for(int i=0;i<25;i++ ){
+    //         mPlayEffectList[i].SetActive(true);
+    //     }
+    // }
+
     /// <summary>
     /// エフェクトを出現させるよ
     /// </summary>
@@ -14,16 +21,10 @@ public class PlayerEffectManager : MonoBehaviour
         GameObject PlayEffect = mPlayEffectList[(int)_key];
         ParticleSystem particleSystem;
         //エフェクトを拾って動かすよ
-        if (particleSystem = PlayEffect.GetComponent<ParticleSystem>())
-        {
-            particleSystem.Play();
-        }
-        else
-        {
-            particleSystem = PlayEffect.GetComponentInChildren<ParticleSystem>();
+        particleSystem = PlayEffect.GetComponentInChildren<ParticleSystem>();
 
-            particleSystem.Play();
-        }
+
+        particleSystem.Play();
     }
 
     /// <summary>
@@ -31,9 +32,11 @@ public class PlayerEffectManager : MonoBehaviour
     /// </summary>
     private void CreateEffectPool()
     {
-        for (int i = 0; i < (int)KeyBoardEnum.M; i++)
+        for (int i = 0; i <= (int)KeyBoardEnum.M; i++)
         {
-            mPlayEffectList.Add(mPlayerEffects.transform.GetChild(i).gameObject);
+            GameObject effect = mPlayerEffects.transform.GetChild(i).gameObject;
+            effect.SetActive(false);
+            mPlayEffectList.Add(effect);
         }
     }
 
