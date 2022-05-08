@@ -37,37 +37,22 @@ public class PlayerEffectManager : MonoBehaviour
         }
     }
     /// <summary>
-    /// エフェクトをコピーして新しく作るよ
-    /// </summary>
-    /// <returns>新しく作った奴</returns>
-    private GameObject CreateNewEffect()
-    {
-        GameObject NewEffect = Instantiate(mPlayerEffects);   //新しいエフェクト
-
-        // 新しく作った奴は非有効化されてListに格納されるよ
-        NewEffect.SetActive(false);
-        mPlayEffectList.Add(NewEffect);
-        return NewEffect;
-    }
-    /// <summary>
-    /// 使えるエフェクトを有効化して返すよ。なかったら新しく作るよ
+    /// 使えるエフェクトを有効化して返すよ
     /// </summary>
     /// <returns>使えるエフェクト</returns>
     private GameObject GetEffect()
     {
+        GameObject CanUseEffect = null ;
         //作って合ったやつを有効化して渡す
-        foreach (GameObject CanUseEffect in mPlayEffectList)
+        foreach (GameObject effect in mPlayEffectList)
         {
-            if (!CanUseEffect.activeSelf)
+            if (!effect.activeSelf)
             {
-                CanUseEffect.SetActive(true);
-                return CanUseEffect;
+                effect.SetActive(true);
+                CanUseEffect = effect;
             }
         }
-        //新しく作って有効かして渡す
-        GameObject NewEffect = CreateNewEffect();
-        NewEffect.SetActive(true);
-        return NewEffect;
+        return CanUseEffect;
     }
 
     private void Start()
