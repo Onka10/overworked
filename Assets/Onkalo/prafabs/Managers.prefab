@@ -43,6 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0add6485deb1ef4498303dec37be4b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startbutton: {fileID: 0}
+  _musicManager: {fileID: 9149776470777237962}
 --- !u!1 &4123350464585992538
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,10 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ae92d717eec004ea0778748c46072c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGM:
-  - {fileID: 8300000, guid: 227c9928a39c95b4295c0e78bcc85120, type: 3}
-  - {fileID: 8300000, guid: 227c9928a39c95b4295c0e78bcc85120, type: 3}
-  - {fileID: 8300000, guid: 227c9928a39c95b4295c0e78bcc85120, type: 3}
 --- !u!82 &4473215317240522555
 AudioSource:
   m_ObjectHideFlags: 0
@@ -776,6 +774,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 4123350464631890451}
   ParentMoleKeyObject: {fileID: 0}
+--- !u!1 &5927777183227277205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7584742996415729321}
+  - component: {fileID: 179619375920538819}
+  m_Layer: 0
+  m_Name: ScoreManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7584742996415729321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927777183227277205}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.069976136, y: -0.031591535, z: -0.031471968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5985660277126429097}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179619375920538819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927777183227277205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101b1e8b4eb05d64185ad0bd9d04b936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7843718801551849764
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +849,7 @@ Transform:
   - {fileID: 4123350464585992536}
   - {fileID: 4123350465801144177}
   - {fileID: 4123350464631890449}
+  - {fileID: 7584742996415729321}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
