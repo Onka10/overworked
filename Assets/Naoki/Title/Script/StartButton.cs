@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class StartButton : MonoBehaviour
 {
-    Button SButton;
+    public Button SButton;
     public GameObject CountDown;
     public Slider BgmSlider;
     public AudioSource audioSource;
@@ -14,12 +14,14 @@ public class StartButton : MonoBehaviour
 
     private void Start()
     {
-        SButton = gameObject.GetComponent<Button>();
+
+
     }
     public void GameStartAnime()
     {
         Debug.Log("GameStart");
         GameTitle.SetActive(false);
+        SButton.gameObject.SetActive(false);
         BgmSlider.gameObject.SetActive(false);
         CountDown.SetActive(true);
         audioSource.mute = true;
