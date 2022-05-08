@@ -47,6 +47,7 @@ MonoBehaviour:
   _musicManager: {fileID: 9149776470777237962}
   _gameover: {fileID: 0}
   _playerInput: {fileID: 4123350464631890451}
+  _inGameUI: {fileID: 7992174790011268927}
 --- !u!1 &4123350464585992538
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +886,51 @@ Transform:
   - {fileID: 4123350465801144177}
   - {fileID: 4123350464631890449}
   - {fileID: 7584742996415729321}
+  - {fileID: 1466228039218376829}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9178764723605017702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466228039218376829}
+  - component: {fileID: 7992174790011268927}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466228039218376829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178764723605017702}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -861.41003, y: -390.30112, z: 94.5451}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5985660277126429097}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7992174790011268927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178764723605017702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009e1051cac94d84c975c130749a4162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _socre: {fileID: 0}

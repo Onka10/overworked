@@ -53,6 +53,8 @@ public class MoleView : MonoBehaviour
     public void InitLooks()
     {
         SetActiveEyes(mLeftEye,mRightEye,true);
+        //ダメージを受けた目を非表示
+        SetActiveEyes(mAttackedLeftEye, mAttackedRightEye, false);
     }
     /// <summary>
     /// 攻撃を受けた状態の見た目に変化
