@@ -33,7 +33,7 @@ public class MoleMove : MonoBehaviour
         this.gameObject.transform.position = TopPosition;
 
         //しばらく上に居る
-        await UniTask.Delay(3000,cancellationToken:cancellationToken);
+        await UniTask.Delay(2000,cancellationToken:cancellationToken);
         
         this.gameObject.transform.position = StartPosition;
         _onKey = false;

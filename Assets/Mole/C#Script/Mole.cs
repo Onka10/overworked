@@ -31,7 +31,7 @@ public class Mole : MonoBehaviour
     /// </summary>
     public void Attacked()
     {
-        if(_moleState != MoleState.Dameged) return;
+        if(_moleState == MoleState.Dameged) return;
 
         _moleState = MoleState.Dameged;
         Debug.Log("攻撃された");
@@ -49,11 +49,9 @@ public class Mole : MonoBehaviour
         //姿を出現
         _moleState = MoleState.Appearance;
         _moleMove.StartUpDown().Forget();
-        // Debug.Log("スタートupdown"+ _moleState);
 
-        await UniTask.Delay(100);
         //移動中
-        await UniTask.WaitUntil(() => _moleMove._onKey,cancellationToken: ct);
+        await UniTask.WaitWhile(() => _moleMove._onKey,cancellationToken: ct);
 
         //潜る
         Init();

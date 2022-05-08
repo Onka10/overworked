@@ -8,6 +8,7 @@ public class MoleManagerKari : MonoBehaviour
 {
     //
     [SerializeField] PlayerEffectManager _playerEffectManager;
+    [SerializeField] ScoreManager _scoreManager;
     
     public PlayerInput _playerInput;
 
@@ -63,8 +64,11 @@ public class MoleManagerKari : MonoBehaviour
         SEManager.I.StartClickSE();
 
         //攻撃出来るか判定して攻撃
-        if(mole.GetMoleState() != MoleState.Appearance) return;
-        mole.Attacked();
+        if(mole.GetMoleState() == MoleState.Appearance){
+            mole.Attacked();
+        }else{
+            _scoreManager.Miss();
+        }
     }
 
     void Update(){

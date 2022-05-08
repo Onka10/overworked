@@ -22,7 +22,7 @@ public class GameOver : MonoBehaviour
         OverScene.SetActive(true);
         Animator OverAnimator = OverScene.GetComponent<Animator>();
         OverAnimator.SetInteger("Score", Score);
-        string s = Score.ToString();//“_”‚ğ•ªŠ„‚·‚é
+        string s = Score.ToString();//ï¿½_ï¿½ï¿½ï¿½ğ•ªŠï¿½ï¿½ï¿½ï¿½ï¿½
         switch (s.Length)
         {
             case 1:
