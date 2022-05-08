@@ -6,6 +6,7 @@ public class GameOver : MonoBehaviour
 {
     public int Score;
     public GameObject OverScene;
+    public GameObject ResetButton;
     public Text t1;
     public Text t2;
     public Text t3;
@@ -49,10 +50,12 @@ public class GameOver : MonoBehaviour
                 t4.text = s[3].ToString(); // 4
                 break;
         }
+        ResetButton.SetActive(true);
     }
     public void ResetOverAnime()
     {
         OverScene.SetActive(false);
+        ResetButton.SetActive(false);
     }
     // Update is called once per frame
     void Update()
