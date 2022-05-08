@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7788789177489760404}
   - component: {fileID: 7593368186377258385}
   - component: {fileID: 231607631865642648}
-  - component: {fileID: 6998346057466034006}
+  - component: {fileID: 8364696909002644830}
   m_Layer: 0
   m_Name: RedDigda
   m_TagString: Untagged
@@ -101,9 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a58bd57be5f17a428a8d6a4aa0f5c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moleUpDown: {fileID: 6998346057466034006}
+  _moleMove: {fileID: 8364696909002644830}
   _scoreManager: {fileID: 0}
---- !u!114 &6998346057466034006
+  _moleState: 0
+--- !u!114 &8364696909002644830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,12 +113,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 539660217030751534}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62c0cabecda7275409348a3590ab407e, type: 3}
+  m_Script: {fileID: 11500000, guid: 634e3f46b0c00314388fe2b5205d4d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMaxUpPositionY: 1
-  mUpSpeed: 1
-  mUpDownComplited: 0
+  MovingSeconds: 1
+  TopPositionY: 0
+  _onKey: 0
 --- !u!1 &1808627362585658027
 GameObject:
   m_ObjectHideFlags: 0
