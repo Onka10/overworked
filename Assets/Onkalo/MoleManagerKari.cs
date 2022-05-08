@@ -23,6 +23,8 @@ public class MoleManagerKari : MonoBehaviour
     private int _upkey1;
     private int _upkey2;
 
+    private GameManager _gameManager;
+
 
     void Start(){
         for(int i=0 ;i<MoleList.Length;i++){
@@ -30,7 +32,10 @@ public class MoleManagerKari : MonoBehaviour
             MoleLists[i] = ParentMoleKeyObject.transform.GetChild(i).gameObject.GetComponent<Mole>();
         }
 
+        _gameManager = GameManager.I;
+
         _playerInput.InputKey
+        .Where(_ => _gameManager.State.Value != GameState.InGame)
         .Subscribe(_ => MoleAttack())
         .AddTo(this);
 
@@ -43,14 +48,15 @@ public class MoleManagerKari : MonoBehaviour
     }
 
     private void MoleAttack(){
-        //押されたキーとMoleを紐づける
-        var InputKey = _playerInput.GetInputkey();
-        var MoleObject = MoleList[(int)InputKey];
-        var mole = MoleObject.GetComponent<Mole>();
 
-        //攻撃出来るか判定して攻撃
-        if(mole.GetMoleState() != MoleState.Appearance) return;
-        mole.Attacked();
+        // //押されたキーとMoleを紐づける
+        // var InputKey = _playerInput.GetInputkey();
+        // var MoleObject = MoleList[(int)InputKey];
+        // var mole = MoleObject.GetComponent<Mole>();
+
+        // //攻撃出来るか判定して攻撃
+        // if(mole.GetMoleState() != MoleState.Appearance) return;
+        // mole.Attacked();
     }
 
     void Update(){
@@ -69,14 +75,15 @@ public class MoleManagerKari : MonoBehaviour
         _upkey1 = up;
         //TODO キーボード点滅
 
-        up = (int)Random.Range (12.0f, 24.0f);
-        _upkey2 = up;
-        //TODO キーボード点滅
+        // up = (int)Random.Range (12.0f, 24.0f);
+        // _upkey2 = up;
+        // //TODO キーボード点滅
     }
 
     private void UpMole(){
-        MoleLists[_upkey1].Apper(cts.Token);
-        MoleLists[_upkey2].Apper(cts.Token);
+        // Debug.Log(_upkey1+"キー");
+        if(MoleLists[_upkey1].GetMoleState() == MoleState.Incubation)   MoleLists[_upkey1].Apper(cts.Token);
+        // if(MoleLists[_upkey2].GetMoleState() == MoleState.Incubation)   MoleLists[_upkey2].Apper(cts.Token);
     }
 
     private void OnDestroy(){

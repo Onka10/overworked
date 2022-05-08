@@ -6,11 +6,11 @@ using System.Threading;
 
 public class Mole : MonoBehaviour
 {
-    [SerializeField] MoleView _moleview;
-    [SerializeField] MoleUpDown _moleupdown;
+    // [SerializeField] MoleView _moleview;
+    [SerializeField] MoleUpDown _moleUpDown;
     [SerializeField] ScoreManager _scoreManager;
 
-    private MoleState _moleState;                //モグラの状態
+    [SerializeField]private MoleState _moleState;                //モグラの状態
     private float mAppearanceTime;               //出現している時間
 
     private CancellationTokenSource cts = new CancellationTokenSource();
@@ -47,12 +47,16 @@ public class Mole : MonoBehaviour
     {
         //姿を出現
         _moleState = MoleState.Appearance;
+        _moleUpDown.StartUpDown();
+        Debug.Log("スタートupdown"+ _moleState);
+
+        await UniTask.Delay(100);
         //移動中
-        //FIXME MOveと連携が取れてない
-        await UniTask.Delay(1000,cancellationToken: ct);
-        // await UniTask.WaitUntil(_moleupdown.UpDown());
+        await UniTask.WaitUntil(() => _moleUpDown.mUpDownComplited,cancellationToken: ct);
+
         //潜る
-        _moleState = MoleState.DisAppearance;
+        _moleState = MoleState.Incubation;
+        Debug.Log("endupdown"+ _moleState);
         
     }
 
@@ -67,7 +71,7 @@ public class Mole : MonoBehaviour
         //TODO 色の初期化
 
         //見た目の初期化
-        _moleview.InitLooks();
+        // _moleview.InitLooks();
 
     }
 }
