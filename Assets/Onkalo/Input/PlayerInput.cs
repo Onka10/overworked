@@ -56,7 +56,7 @@ public class PlayerInput : MonoBehaviour
         if(context.phase == InputActionPhase.Started){
             string key = context.control.ToString();
             InputKeyCode = keyDictionary[key];
-            Debug.Log(key);
+            // Debug.Log(key);
 
             _inputSubject.OnNext(Unit.Default);
         }

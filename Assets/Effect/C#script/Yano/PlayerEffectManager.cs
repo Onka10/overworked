@@ -7,11 +7,11 @@ public class PlayerEffectManager : MonoBehaviour
     [SerializeField] private GameObject mPlayerEffects;
     private List<GameObject> mPlayEffectList = new List<GameObject>();
 
-    public void Active(){
-        for(int i=0;i<25;i++ ){
-            mPlayEffectList[i].SetActive(true);
-        }
-    }
+    // public void Active(){
+    //     for(int i=0;i<25;i++ ){
+    //         mPlayEffectList[i].SetActive(true);
+    //     }
+    // }
 
     /// <summary>
     /// エフェクトを出現させるよ
@@ -21,7 +21,7 @@ public class PlayerEffectManager : MonoBehaviour
         GameObject PlayEffect = mPlayEffectList[(int)_key];
         ParticleSystem particleSystem;
         //エフェクトを拾って動かすよ
-        particleSystem = PlayEffect.GetComponent<ParticleSystem>();
+        particleSystem = PlayEffect.GetComponentInChildren<ParticleSystem>();
 
 
         particleSystem.Play();
