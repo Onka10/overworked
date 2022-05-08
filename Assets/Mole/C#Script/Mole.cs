@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
@@ -7,7 +7,9 @@ using System.Threading;
 public class Mole : MonoBehaviour
 {
     [SerializeField] MoleView _moleview;
+    [SerializeField] MoleUpDown _moleupdown;
     [SerializeField] ScoreManager _scoreManager;
+
     private MoleState _moleState;                //モグラの状態
     private float mAppearanceTime;               //出現している時間
 
@@ -35,7 +37,7 @@ public class Mole : MonoBehaviour
         Debug.Log("攻撃された");
 
         //TODO スコアマネージャを呼ぶ
-        _scoreManager.ScoreAdd(1);
+        _scoreManager.ScoreAdd();
     }
 
     /// <summary>
@@ -48,6 +50,7 @@ public class Mole : MonoBehaviour
         //移動中
         //FIXME MOveと連携が取れてない
         await UniTask.Delay(1000,cancellationToken: ct);
+        // await UniTask.WaitUntil(_moleupdown.UpDown());
         //潜る
         _moleState = MoleState.DisAppearance;
         

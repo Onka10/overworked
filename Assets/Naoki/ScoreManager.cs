@@ -1,26 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int score;
-    public GameManeger gameManeger;
+    public IReadOnlyReactiveProperty<int> Score => _score;
+    private readonly ReactiveProperty<int> _score = new ReactiveProperty<int>(0);
+
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
-        gameManeger = FindObjectOfType<GameManeger>();
-        score = gameManeger.nextScore;//初期化
+        _score.Value = 0;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void ScoreAdd()
     {
-
-    }
-    public void ScoreAdd(int moleScore)//違うモルもし違うポイントがあればそれを入力。
-    {
-        score += moleScore;//指定するスコアを加算する。
+        
+        _score.Value++;
     }
 
 }
