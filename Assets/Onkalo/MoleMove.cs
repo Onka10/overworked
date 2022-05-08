@@ -6,7 +6,7 @@ using System.Threading;
 
 public class MoleMove : MonoBehaviour
 {
-    [SerializeField] private int MovingSeconds;
+    // [SerializeField] private int MovingSeconds;
 
     // [SerializeField] private float StartPositionY;                  //最初のポジション
     Vector3 StartPosition;
@@ -33,7 +33,7 @@ public class MoleMove : MonoBehaviour
         this.gameObject.transform.position = TopPosition;
 
         //しばらく上に居る
-        await UniTask.Delay(1000,cancellationToken:cancellationToken);
+        await UniTask.Delay(3000,cancellationToken:cancellationToken);
         
         this.gameObject.transform.position = StartPosition;
         _onKey = false;
