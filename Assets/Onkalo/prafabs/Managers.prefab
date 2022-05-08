@@ -45,6 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startbutton: {fileID: 0}
   _musicManager: {fileID: 9149776470777237962}
+  _gameover: {fileID: 0}
+  _playerInput: {fileID: 4123350464631890451}
+  GameSet: 0
 --- !u!1 &4123350464585992538
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +103,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6adba88eb224fd840afa7006707a5672, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f0e26412d118534aa57b75ce9b28715, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -724,6 +727,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6154bf33-fe8a-4f46-942d-8139ab0a45ea
     m_ActionName: KeyBoard/Z[/Keyboard/anyKey]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4123350464631890451}
+        m_TargetAssemblyTypeName: PlayerInput, Assembly-CSharp
+        m_MethodName: Ongamestart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3a65175e-d12f-44f9-b388-38e8a49fbd2d
+    m_ActionName: KeyBoard/GameStart[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: key
   m_DefaultActionMap: KeyBoard
@@ -772,6 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acbef951a298c94c8f80ed90f7586ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerEffectManager: {fileID: 0}
   _playerInput: {fileID: 4123350464631890451}
   ParentMoleKeyObject: {fileID: 0}
 --- !u!1 &5927777183227277205

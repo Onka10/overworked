@@ -16,7 +16,7 @@ public class MusicManager : MonoBehaviour
 
         GameManager.I.State
         .Where(s => s==GameState.InGame)
-        .Subscribe(s =>MusicStart(s))
+        .Subscribe(s =>MusicStart())
         .AddTo(this);
     }
 
@@ -24,7 +24,7 @@ public class MusicManager : MonoBehaviour
         _audioSource.Stop();
     }
 
-    private void MusicStart(GameState gamestate){
+    private void MusicStart(){
         //音源変更
         Music.Play("Music","");
     }

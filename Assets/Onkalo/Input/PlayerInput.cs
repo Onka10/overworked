@@ -11,6 +11,9 @@ public class PlayerInput : MonoBehaviour
     public IObservable<Unit> InputKey => _inputSubject;
     private Subject<Unit> _inputSubject = new Subject<Unit>();
 
+    public IObservable<Unit> Startgame => _startSubject;
+    private Subject<Unit> _startSubject = new Subject<Unit>();
+
     private Dictionary<string, KeyBoardEnum> keyDictionary;
     private KeyBoardEnum InputKeyCode;
 
@@ -56,6 +59,12 @@ public class PlayerInput : MonoBehaviour
             Debug.Log(key);
 
             _inputSubject.OnNext(Unit.Default);
+        }
+    }
+
+    public void Ongamestart (InputAction.CallbackContext context){
+        if(context.phase == InputActionPhase.Started){
+            _startSubject.OnNext(Unit.Default);
         }
     }
 
