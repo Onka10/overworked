@@ -791,6 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerEffectManager: {fileID: 0}
+  _scoreManager: {fileID: 179619375920538819}
   _playerInput: {fileID: 4123350464631890451}
   ParentMoleKeyObject: {fileID: 0}
 --- !u!1 &5927777183227277205

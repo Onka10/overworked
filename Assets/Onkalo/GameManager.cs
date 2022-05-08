@@ -43,7 +43,7 @@ public class GameManager : Singleton<GameManager>
         _state.Value = GameState.Result;
         await UniTask.Delay(2000);
         _gameover.PlayOverAnime();
-        Debug.Log("終わり");
+        // Debug.Log("終わり");
     }
 
 }

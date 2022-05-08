@@ -16,7 +16,13 @@ public class ScoreManager : MonoBehaviour
     public void ScoreAdd()
     {
         
-        _score.Value++;
+        _score.Value+=10;
+    }
+
+    public void Miss(){
+        _score.Value-=10;
+
+        if(_score.Value < 0)    _score.Value=0;
     }
 
 }
