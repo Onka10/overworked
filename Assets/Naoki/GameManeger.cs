@@ -5,85 +5,85 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class GameManeger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private static GameObject mInstance;
-    public static GameObject Instance
-    {
-        get
-        {
-            return mInstance;
-        }
-    }
-    public int time;
-    public ScoreManager scoreManager;
-    bool ifGameStarted = false;//ƒQ[ƒ€n‚Ü‚Á‚Ä‚é‚Ì‚©
-    public int nextScore = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        scoreManager = GameObject.FindObjectOfType<ScoreManager>();
-        if (mInstance == null)
-        {
-            DontDestroyOnLoad(gameObject);
-            mInstance = gameObject;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+    // // Start is called before the first frame update
+    // private static GameObject mInstance;
+    // public static GameObject Instance
+    // {
+    //     get
+    //     {
+    //         return mInstance;
+    //     }
+    // }
+    // public int time;
+    // public ScoreManager scoreManager;
+    // bool ifGameStarted = false;//ï¿½Qï¿½[ï¿½ï¿½ï¿½nï¿½Ü‚ï¿½ï¿½Ä‚ï¿½Ì‚ï¿½
+    // public int nextScore = 0;
+    // // Start is called before the first frame update
+    // void Start()
+    // {
+    //     scoreManager = GameObject.FindObjectOfType<ScoreManager>();
+    //     if (mInstance == null)
+    //     {
+    //         DontDestroyOnLoad(gameObject);
+    //         mInstance = gameObject;
+    //     }
+    //     else
+    //     {
+    //         Destroy(gameObject);
+    //     }
 
-        time = 0;//‰Šú‰»
-    }
+    //     time = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (ifGameStarted)//ƒQ[ƒ€I‚í‚é‚Ü‚Å‚ÌƒXƒRƒA‚ğ‹L˜^‚·‚éB
-        {
-            nextScore = scoreManager.score;
-        }
+    // // Update is called once per frame
+    // void Update()
+    // {
+    //     if (ifGameStarted)//ï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½Ü‚Å‚ÌƒXï¿½Rï¿½Aï¿½ï¿½ï¿½Lï¿½^ï¿½ï¿½ï¿½ï¿½B
+    //     {
+    //         nextScore = scoreManager.score;
+    //     }
 
-    }
-    IEnumerator Timer()
-    {
-        Debug.Log("Game Started");
-        while (ifGameStarted)
-        {
-            yield return new WaitForSeconds(1f);//ƒ^ƒCƒ€‚ğ•b”‚Å‹L˜^‚·‚é
-            if (ifGameStarted)//’â~Œã‚ÌÄ‰ÁZ‚ğ–h~‚·‚é
-            {
-                time += 1;
-            }
+    // }
+    // IEnumerator Timer()
+    // {
+    //     Debug.Log("Game Started");
+    //     while (ifGameStarted)
+    //     {
+    //         yield return new WaitForSeconds(1f);//ï¿½^ï¿½Cï¿½ï¿½ï¿½ï¿½bï¿½ï¿½ï¿½Å‹Lï¿½^ï¿½ï¿½ï¿½ï¿½
+    //         if (ifGameStarted)//ï¿½ï¿½~ï¿½ï¿½ÌÄ‰ï¿½ï¿½Zï¿½ï¿½hï¿½~ï¿½ï¿½ï¿½ï¿½
+    //         {
+    //             time += 1;
+    //         }
 
 
-        }
-    }
-    public void StartTime()//ƒ^ƒCƒ€‹L˜^ŠJn
-    {
-        if (!ifGameStarted)
-        {
-            ifGameStarted = true;
-            StartCoroutine(Timer());
-        }
+    //     }
+    // }
+    // public void StartTime()//ï¿½^ï¿½Cï¿½ï¿½ï¿½Lï¿½^ï¿½Jï¿½n
+    // {
+    //     if (!ifGameStarted)
+    //     {
+    //         ifGameStarted = true;
+    //         StartCoroutine(Timer());
+    //     }
 
-    }
-    public void PauseTime()//ˆê’â~
-    {
-        ifGameStarted = false;
-    }
-    public void ResetTime()//ƒŠƒZƒbƒg
-    {
+    // }
+    // public void PauseTime()//ï¿½êï¿½ï¿½~
+    // {
+    //     ifGameStarted = false;
+    // }
+    // public void ResetTime()//ï¿½ï¿½ï¿½Zï¿½bï¿½g
+    // {
 
-        ifGameStarted = false;
-        time = 0;
-        scoreManager.score = 0;
+    //     ifGameStarted = false;
+    //     time = 0;
+    //     scoreManager.score = 0;
 
-    }
-    public void NextScene()//ƒV[ƒ“ƒ`ƒFƒ“ƒW
-    {
-        time = 0;
-        ifGameStarted = false;
-        nextScore = scoreManager.score;
-        SceneManager.LoadScene(1);
-    }
+    // }
+    // public void NextScene()//ï¿½Vï¿½[ï¿½ï¿½ï¿½`ï¿½Fï¿½ï¿½ï¿½W
+    // {
+    //     time = 0;
+    //     ifGameStarted = false;
+    //     nextScore = scoreManager.score;
+    //     SceneManager.LoadScene(1);
+    // }
 }

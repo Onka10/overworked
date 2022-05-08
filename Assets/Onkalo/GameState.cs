@@ -1,6 +1,6 @@
 public enum GameState
 {
-    Title,
-    InGame,
-    Result
+    Title=0,
+    InGame=1,
+    Result=2
 }

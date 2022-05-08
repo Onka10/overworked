@@ -1,12 +1,23 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
+using System.Threading;
 
 public class Mole : MonoBehaviour
 {
-    [SerializeField,Range(1.0f,100.0f)] private float mAppearanceTimeLimit;   //出現時間
-    private MoleState _moleState;                //モグラの状態
+    // [SerializeField] MoleView _moleview;
+    [SerializeField] MoleUpDown _moleUpDown;
+    [SerializeField] ScoreManager _scoreManager;
+
+    [SerializeField]private MoleState _moleState;                //モグラの状態
     private float mAppearanceTime;               //出現している時間
+
+    private CancellationTokenSource cts = new CancellationTokenSource();
+
+    void Start(){
+        _moleState = MoleState.Incubation;
+    }
 
     /// <summary>
     /// モグラの 状態を返す
@@ -19,51 +30,48 @@ public class Mole : MonoBehaviour
     /// 攻撃されたらなら死ぬ
     /// </summary>
     public void Attacked()
-    { 
-        //ChangeMoleState(MoleStateEnum.MoleState.Dameged);
+    {
+        if(_moleState != MoleState.Dameged) return;
+
+        _moleState = MoleState.Dameged;
         Debug.Log("攻撃された");
+
+        //TODO スコアマネージャを呼ぶ
+        _scoreManager.ScoreAdd();
     }
-    
 
     /// <summary>
-    /// モグラの出現時の挙動
+    /// モグラの出現
     /// </summary>
-    private void Appearance()
+    public async void Apper(CancellationToken ct = default)
     {
-        mAppearanceTime += Time.deltaTime;
-        if (mAppearanceTime>mAppearanceTimeLimit)
-        {
-            //姿をくらました
-            //ChangeMoleState(MoleStateEnum.MoleState.DisAppearance);
-        }
-    }
-    /// <summary>
-    /// 引数の状態に変更するよ
-    /// </summary>
-    /// <param name="_changeState"></param>
-    //public void ChangeMoleState(MoleStateEnum.MoleState _changeState)
-    //{
-    //    mState = _changeState;
-    //}
-
-    /// <summary>
-    /// モグラの出現時間の初期化
-    /// </summary>
-    private void OnEnable()
-    {
-        mAppearanceTime = 0.0f;
+        //姿を出現
         _moleState = MoleState.Appearance;
+        _moleUpDown.StartUpDown();
+        Debug.Log("スタートupdown"+ _moleState);
+
+        await UniTask.Delay(100);
+        //移動中
+        await UniTask.WaitUntil(() => _moleUpDown.mUpDownComplited,cancellationToken: ct);
+
+        //潜る
+        _moleState = MoleState.Incubation;
+        Debug.Log("endupdown"+ _moleState);
+        
     }
 
-    private void Update()
+    /// <summary>
+    /// モグラの初期化
+    /// </summary>
+    private void Init()
     {
-        if (_moleState == MoleState.Appearance)       //出現中
-        {
-            Appearance();
-        }
-        else if(_moleState == MoleState.Incubation)   //潜伏中
-        {
-            this.gameObject.SetActive(false);//潜伏状態になったら非アクティブ化する
-        }
+        //ステータスの初期化
+        _moleState = MoleState.Incubation;
+
+        //TODO 色の初期化
+
+        //見た目の初期化
+        // _moleview.InitLooks();
+
     }
 }
