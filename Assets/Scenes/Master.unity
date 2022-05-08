@@ -623,7 +623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &974685293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4050197032845015244, guid: 57fd254959421444f9d5b9c61abd2747, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4050197032845015245, guid: 57fd254959421444f9d5b9c61abd2747, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1314,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
+    - target: {fileID: 7992174790011268927, guid: 7f3833640bc3b97439def72c9bbd0fdc, type: 3}
+      propertyPath: _socre
+      value: 
+      objectReference: {fileID: 974685292}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3833640bc3b97439def72c9bbd0fdc, type: 3}
 --- !u!1 &1751362350

@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] MusicManager _musicManager;
     [SerializeField] GameOver _gameover;
     [SerializeField] PlayerInput _playerInput;
+    [SerializeField] InGameUI _inGameUI;
 
     public IReadOnlyReactiveProperty<GameState> State => _state;
 
@@ -32,6 +33,7 @@ public class GameManager : Singleton<GameManager>
         await UniTask.WaitUntil(() => _startbutton.TitleEnd);
         _startbutton.TitleEnd = false;
         _state.Value = GameState.InGame;
+        _inGameUI.StarGame();
         Debug.Log("ゲームスタート");
 
         //ゲーム中
