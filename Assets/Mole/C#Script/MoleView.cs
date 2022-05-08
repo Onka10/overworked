@@ -64,8 +64,4 @@ public class MoleView : MonoBehaviour
         // 攻撃を受けた状態の目に変更
         SetActiveEyes(mAttackedLeftEye, mAttackedRightEye, true);
     }
-    private void Update()
-    {
-        ChangeAttackedLooks();
-    }
 }
