@@ -49,7 +49,7 @@ public class Mole : MonoBehaviour
         //姿を出現
         _moleState = MoleState.Appearance;
         _moleMove.StartUpDown().Forget();
-        Debug.Log("スタートupdown"+ _moleState);
+        // Debug.Log("スタートupdown"+ _moleState);
 
         await UniTask.Delay(100);
         //移動中
