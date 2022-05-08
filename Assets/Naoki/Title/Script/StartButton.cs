@@ -6,10 +6,11 @@ public class StartButton : MonoBehaviour
 {
     Button SButton;
     public GameObject CountDown;
+    public Slider BgmSlider;
     public AudioSource audioSource;
-
+    public GameObject GameTitle;
     //タイトルシーンが終わればtrue
-    public bool TitleEnd=false;
+    public bool TitleEnd = false;
 
     private void Start()
     {
@@ -18,6 +19,8 @@ public class StartButton : MonoBehaviour
     public void GameStartAnime()
     {
         Debug.Log("GameStart");
+        GameTitle.SetActive(false);
+        BgmSlider.gameObject.SetActive(false);
         CountDown.SetActive(true);
         audioSource.mute = true;
         TitleEnd = true;
