@@ -9,9 +9,9 @@ public class PlayerEffectManager : MonoBehaviour
     /// <summary>
     /// エフェクトを出現させるよ
     /// </summary>
-    public void Play()
+    public void Play(KeyBoardEnum _key)
     {
-        GameObject PlayEffect = GetEffect();
+        GameObject PlayEffect = mPlayEffectList[(int)_key];
         ParticleSystem particleSystem;
         //エフェクトを拾って動かすよ
         if (particleSystem = PlayEffect.GetComponent<ParticleSystem>())
@@ -35,24 +35,6 @@ public class PlayerEffectManager : MonoBehaviour
         {
             mPlayEffectList.Add(mPlayerEffects.transform.GetChild(i).gameObject);
         }
-    }
-    /// <summary>
-    /// 使えるエフェクトを有効化して返すよ
-    /// </summary>
-    /// <returns>使えるエフェクト</returns>
-    private GameObject GetEffect()
-    {
-        GameObject CanUseEffect = null ;
-        //作って合ったやつを有効化して渡す
-        foreach (GameObject effect in mPlayEffectList)
-        {
-            if (!effect.activeSelf)
-            {
-                effect.SetActive(true);
-                CanUseEffect = effect;
-            }
-        }
-        return CanUseEffect;
     }
 
     private void Start()
