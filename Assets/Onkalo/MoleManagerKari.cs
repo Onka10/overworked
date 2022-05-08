@@ -36,7 +36,7 @@ public class MoleManagerKari : MonoBehaviour
         _gameManager = GameManager.I;
 
         _playerInput.InputKey
-        .Where(_ => _gameManager.State.Value != GameState.InGame)
+        .Where(_ => _gameManager.State.Value == GameState.InGame)
         .Subscribe(_ => MoleAttack())
         .AddTo(this);
 
@@ -44,17 +44,17 @@ public class MoleManagerKari : MonoBehaviour
         .Subscribe(t =>{
             _inGame = t==GameState.InGame ? true:false;
             if(t==GameState.InGame) ParentMoleKeyObject.SetActive(true);
-            _playerEffectManager.Active();
+            // _playerEffectManager.Active();
         })
         .AddTo(this);
 
     }
 
     private void MoleAttack(){
+        // Debug.Log("クリック");
         //押されたキーとMoleを紐づける
         var InputKey = _playerInput.GetInputkey();
-        var MoleObject = MoleList[(int)InputKey];
-        var mole = MoleObject.GetComponent<Mole>();
+        var mole = MoleLists[(int)InputKey];
 
         //FIXME エフェクト再生
         _playerEffectManager.Play(InputKey);
