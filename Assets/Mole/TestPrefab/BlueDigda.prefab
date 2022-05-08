@@ -667,7 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mMaxUpPositionY: 1
   mUpSpeed: 0.1
-  mUpDownComplited: 0
+  mUpDownComplited: 1
 --- !u!114 &8128721765316236611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,7 +682,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mLeftEye: {fileID: 3983034648634769448}
   mRightEye: {fileID: 7953070621955127830}
-  mAttackedEye: {fileID: 0}
+  mLeftAttackedEyePrefab: {fileID: 4626582169799229692, guid: 0ff0608b998294849a7d0d47f737bb8b, type: 3}
+  mRightAttackedEyePrefab: {fileID: 321109395881631649, guid: e108d0e86522011469f46f851ca68952, type: 3}
 --- !u!114 &8128721765316236612
 MonoBehaviour:
   m_ObjectHideFlags: 0
