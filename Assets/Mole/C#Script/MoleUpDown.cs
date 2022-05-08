@@ -27,22 +27,27 @@ public class MoleUpDown : MonoBehaviour
     private void UpDown()
     {
         Vector3 UpDownSpeed = new Vector3(0, mUpSpeed, 0);
-        //上昇
-        this.gameObject.transform.position += UpDownSpeed;
+
         //下降
         if (mDownward)
         {
             this.gameObject.transform.position -= UpDownSpeed;
         }
+        else
+        {
+            //上昇
+            this.gameObject.transform.position += UpDownSpeed;
+        }
         //最大高度まで行けば下がりだすよ
-        if(mMaxUpPositionY<transform.position.y)
+        if (mMaxUpPositionY < transform.position.y)
         {
             mDownward = true;
         }
         //初期位置に戻れたらTrue
         if (mFirstPositionY > transform.position.y)
         {
-            this.gameObject.transform.position = new Vector3(0, mFirstPositionY, 0);
+            this.gameObject.transform.position 
+                = new Vector3(this.gameObject.transform.position.x, mFirstPositionY, this.gameObject.transform.position.z);
             mDownward = false;
             mUpDownComplited= true;
         }
