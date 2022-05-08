@@ -15,16 +15,8 @@ public class GameManager : Singleton<GameManager>
 
     private readonly ReactiveProperty<GameState> _state = new ReactiveProperty<GameState>(GameState.Title);
 
-    [SerializeField]private bool GameSet=false;
-
     async void Start()
     {
-
-        _musicManager.LastGameTime
-        .Subscribe(t =>{
-            if(t == 0)  GameSet=true;
-        })
-        .AddTo(this);
 
         _playerInput.Startgame
         .Subscribe(_ => _startbutton.GameStartAnime())
@@ -44,11 +36,12 @@ public class GameManager : Singleton<GameManager>
 
         //ゲーム中
         // await UniTask.Delay(30000);
-        await UniTask.WaitUntil(() => GameSet);
+        await UniTask.WaitWhile(() => Music.IsPlaying);
 
 
         //ゲーム終了
         _state.Value = GameState.Result;
+        await UniTask.Delay(2000);
         _gameover.PlayOverAnime();
         Debug.Log("終わり");
     }
