@@ -33,7 +33,10 @@ public class PlayerEffectManager : MonoBehaviour
     {
         for (int i = 0; i < (int)KeyBoardEnum.M; i++)
         {
-            mPlayEffectList.Add(mPlayerEffects.transform.GetChild(i).gameObject);
+            GameObject effect = mPlayerEffects.transform.GetChild(i).gameObject;
+            effect.SetActive(false);
+            mPlayEffectList.Add(effect);
+
         }
     }
 
