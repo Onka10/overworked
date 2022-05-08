@@ -14,6 +14,12 @@ public class StartButton : MonoBehaviour
     {
         Debug.Log("GameStart");
         CountDown.SetActive(true);
+        StartCoroutine(ResetCountDown());
+    }
+    IEnumerator ResetCountDown()
+    {
+        yield return new WaitForSeconds(5);
+        CountDown.SetActive(false);
     }
     private void Update()
     {
