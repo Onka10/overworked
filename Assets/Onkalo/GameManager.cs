@@ -13,7 +13,7 @@ public class GameManager : Singleton<GameManager>
 
     private readonly ReactiveProperty<GameState> _state = new ReactiveProperty<GameState>(GameState.Title);
 
-    private bool GameSet=false;
+    [SerializeField]private bool GameSet=false;
 
     async void Start()
     {
@@ -21,7 +21,8 @@ public class GameManager : Singleton<GameManager>
 
         _musicManager.LastGameTime
         .Subscribe(t =>{
-            if(t == 0)  GameSet=true;
+            // if(t == 0)  GameSet=true;
+            Debug.Log(t);
         })
         .AddTo(this);
 

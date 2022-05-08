@@ -48,7 +48,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnKey(InputAction.CallbackContext context){
         //ゲーム中以外は実行しない
-        if(GameManager.I.State.Value != GameState.InGame)   return;
+        // if(GameManager.I.State.Value != GameState.InGame)   return;
 
         if(context.phase == InputActionPhase.Started){
             string key = context.control.ToString();
