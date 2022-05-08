@@ -6,7 +6,8 @@ using System.Threading;
 
 public class MoleManagerKari : MonoBehaviour
 {
-    //FIXME現状責任が重い
+    //
+    [SerializeField] PlayerEffectManager _playerEffectManager;
     
     public PlayerInput _playerInput;
 
@@ -48,15 +49,20 @@ public class MoleManagerKari : MonoBehaviour
     }
 
     private void MoleAttack(){
+        //押されたキーとMoleを紐づける
+        var InputKey = _playerInput.GetInputkey();
+        var MoleObject = MoleList[(int)InputKey];
+        var mole = MoleObject.GetComponent<Mole>();
 
-        // //押されたキーとMoleを紐づける
-        // var InputKey = _playerInput.GetInputkey();
-        // var MoleObject = MoleList[(int)InputKey];
-        // var mole = MoleObject.GetComponent<Mole>();
+        //FIXME エフェクト再生
+        // _playerEffectManager.Play(InputKey);
 
-        // //攻撃出来るか判定して攻撃
-        // if(mole.GetMoleState() != MoleState.Appearance) return;
-        // mole.Attacked();
+        //se再生
+        // SEManager
+
+        //攻撃出来るか判定して攻撃
+        if(mole.GetMoleState() != MoleState.Appearance) return;
+        mole.Attacked();
     }
 
     void Update(){
