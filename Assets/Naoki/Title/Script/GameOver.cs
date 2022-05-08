@@ -54,6 +54,7 @@ public class GameOver : MonoBehaviour
     }
     public void ResetOverAnime()
     {
+        ResetButton.transform.position += new Vector3(0, -0.0471f, 0);
         OverScene.SetActive(false);
         ResetButton.SetActive(false);
     }
