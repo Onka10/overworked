@@ -10,7 +10,7 @@ public class FlashingKeyTop : MonoBehaviour
     [SerializeField] private float mMaxFlashingTime;
     private float mFlashingTime;
     private Color mFirstKeyTopColor;                //最初の色
-    private bool mFlashing;        //点滅中
+    [SerializeField] private bool mFlashing;        //点滅中
     /// <summary>
     /// こいつを呼ぶと点滅開始する
     /// </summary>
@@ -33,17 +33,18 @@ public class FlashingKeyTop : MonoBehaviour
     {
         if (mKeyTopImage.canvasRenderer.GetColor() == mFirstKeyTopColor)
         {
+            //灰色ぽくなるよ
             CrossFadeColorKeyTop(Color.gray);
         }
         else if (mKeyTopImage.canvasRenderer.GetColor() == Color.gray)
         {
-
+            //最初の色になるよ
             CrossFadeColorKeyTop(mFirstKeyTopColor);
         }
     }
     private void Start()
     {
-        mFirstKeyTopColor = mKeyTopImage.color;
+        mFirstKeyTopColor = mKeyTopImage.canvasRenderer.GetColor();
         mFlashingTime = 0.0f;
         mFlashing = false;
     }
@@ -59,7 +60,7 @@ public class FlashingKeyTop : MonoBehaviour
             {
                 Flash();
             }
-            else//時間いっぱい点滅したなら
+            else//時間いっぱい点滅したなら初期化
             {
                 CrossFadeColorKeyTop(mFirstKeyTopColor);
                 mFlashing = false;
