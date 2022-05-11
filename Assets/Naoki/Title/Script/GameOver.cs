@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
     public int Score;
+    public ScoreManager scoreManager;
     public GameObject OverScene;
     public GameObject ResetButton;
     public Text t1;
@@ -19,6 +20,7 @@ public class GameOver : MonoBehaviour
     }
     public void PlayOverAnime()
     {
+        Score = scoreManager.Score.Value;
         OverScene.SetActive(true);
         Animator OverAnimator = OverScene.GetComponent<Animator>();
         OverAnimator.SetInteger("Score", Score);
