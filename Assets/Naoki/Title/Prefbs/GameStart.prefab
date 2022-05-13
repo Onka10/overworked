@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd636042830a6954b9989b3b0c7a5f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SButton: {fileID: 0}
   CountDown: {fileID: 4029319611046855176}
-  BgmSlider: {fileID: 0}
   audioSource: {fileID: 0}
   GameTitle: {fileID: 0}
   TitleEnd: 0
@@ -191,7 +191,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

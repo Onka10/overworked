@@ -9,10 +9,14 @@ public class ScoreManager : MonoBehaviour
     private readonly ReactiveProperty<int> _score = new ReactiveProperty<int>(0);
 
     // Start is called before the first frame update
-    public void Init()
-    {
-        _score.Value = 0;
+
+    void Start(){
+        GameManager.I.State
+        .Where(s => s==GameState.InGame)
+        .Subscribe(_ => _score.Value = 0)
+        .AddTo(this);
     }
+
     public void ScoreAdd()
     {
         

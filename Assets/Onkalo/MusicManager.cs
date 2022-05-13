@@ -28,4 +28,8 @@ public class MusicManager : MonoBehaviour
         //音源変更
         Music.Play("Music","");
     }
+
+    void Update(){
+        _lastTime.Value = (int)_audioSource.clip.length - (int)_audioSource.time;
+    }
 }
