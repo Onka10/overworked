@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UniRx;
+using Cysharp.Threading.Tasks;
+
 public class GameOver : MonoBehaviour
 {
-    public int Score;
+    private int Score;
     public ScoreManager scoreManager;
     public GameObject OverScene;
     public GameObject ResetButton;
@@ -12,13 +15,27 @@ public class GameOver : MonoBehaviour
     public Text t2;
     public Text t3;
     public Text t4;
+    GameManager _gameManger;
 
     // Start is called before the first frame update
     void Start()
     {
+        _gameManger = GameManager.I;
+        _gameManger.State
+        .Where(s => s==GameState.Result)
+        .Subscribe(_ =>{
+            PlayOverAnime();
+        })
+        .AddTo(this);
 
+        _gameManger.State
+        .Where(s => s!=GameState.Result)
+        .Subscribe(_ =>{
+            ResetOverAnime();
+        })
+        .AddTo(this);
     }
-    public void PlayOverAnime()
+    private void PlayOverAnime()
     {
         Score = scoreManager.Score.Value;
         OverScene.SetActive(true);
@@ -54,7 +71,7 @@ public class GameOver : MonoBehaviour
         }
         ResetButton.SetActive(true);
     }
-    public void ResetOverAnime()
+    private void ResetOverAnime()
     {
         ResetButton.transform.position += new Vector3(0, -0.0471f, 0);
         OverScene.SetActive(false);

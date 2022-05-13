@@ -63,8 +63,6 @@ public class PlayerInput : MonoBehaviour
     }
 
     public void Ongamestart (InputAction.CallbackContext context){
-        if(GameManager.I.State.Value != GameState.Title) return;
-
         if(context.phase == InputActionPhase.Started){
             _startSubject.OnNext(Unit.Default);
         }

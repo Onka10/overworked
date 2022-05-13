@@ -18,8 +18,6 @@ public class MoleManagerKari : MonoBehaviour
     private GameObject[] MoleList = new GameObject[26];
     private Mole[] MoleLists = new Mole[26];
 
-    private bool _inGame;
-
     private CancellationTokenSource cts = new CancellationTokenSource();
 
     private int _upkey1;
@@ -43,9 +41,7 @@ public class MoleManagerKari : MonoBehaviour
 
         GameManager.I.State
         .Subscribe(t =>{
-            _inGame = t==GameState.InGame ? true:false;
             if(t==GameState.InGame) ParentMoleKeyObject.SetActive(true);
-            // _playerEffectManager.Active();
         })
         .AddTo(this);
 
@@ -72,7 +68,7 @@ public class MoleManagerKari : MonoBehaviour
     }
 
     void Update(){
-        if(_inGame){
+        if(Music.IsPlaying){
             if(Music.IsNearChangedBeat()){
                 DecideUpMole();
             }
