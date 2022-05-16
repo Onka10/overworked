@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T07:53:24.079Z" agent="5.0 (Windows)" etag="uFr3dzFxyumvdPkw-uw6" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-16T07:55:11.694Z" agent="5.0 (Windows)" etag="5cnaSMpVVzdUlS4BYyD7" version="17.5.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="958" dy="1735" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="694" dy="1560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,7 +47,7 @@
           <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="xWChXZzRoAnnu--p6J3z-17" value="KeyBoardEnum" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="350" y="-320" width="160" height="58" as="geometry" />
+          <mxGeometry x="345" y="-390" width="160" height="58" as="geometry" />
         </mxCell>
         <mxCell id="xWChXZzRoAnnu--p6J3z-19" value="Qが0でMが24の順番" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xWChXZzRoAnnu--p6J3z-17" vertex="1">
           <mxGeometry y="26" width="160" height="24" as="geometry" />
@@ -88,6 +88,11 @@
         <mxCell id="xWChXZzRoAnnu--p6J3z-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="xWChXZzRoAnnu--p6J3z-24" vertex="1">
           <mxGeometry y="166" width="120" height="8" as="geometry" />
         </mxCell>
+        <mxCell id="1dzc-rVZRY08uWLl49J--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xWChXZzRoAnnu--p6J3z-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="-330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="xWChXZzRoAnnu--p6J3z-31" value="MoleManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="331" y="-160" width="230" height="140" as="geometry" />
         </mxCell>
@@ -112,6 +117,17 @@
         <mxCell id="xWChXZzRoAnnu--p6J3z-38" value="状態に合わせてアニメーションを再生" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="xWChXZzRoAnnu--p6J3z-36" vertex="1">
           <mxGeometry y="34" width="230" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="1dzc-rVZRY08uWLl49J--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.425;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xWChXZzRoAnnu--p6J3z-42" target="xWChXZzRoAnnu--p6J3z-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="160" />
+              <mxPoint x="610" y="160" />
+              <mxPoint x="610" y="150" />
+              <mxPoint x="605" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="xWChXZzRoAnnu--p6J3z-42" value="MoleMove" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="440" y="170" width="220" height="74" as="geometry" />
         </mxCell>
@@ -135,9 +151,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="400" y="-207" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="363" y="-190" />
-              <mxPoint x="320" y="-190" />
-              <mxPoint x="320" y="-210" />
+              <mxPoint x="363" y="-210" />
               <mxPoint x="210" y="-210" />
             </Array>
           </mxGeometry>
